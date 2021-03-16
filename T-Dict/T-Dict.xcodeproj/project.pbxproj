@@ -17,8 +17,12 @@
 		043B61EA2600889500EA2189 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043B61E82600889500EA2189 /* ListViewController.xib */; };
 		043B61ED260088AA00EA2189 /* UtilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61EB260088AA00EA2189 /* UtilitiesViewController.swift */; };
 		043B61EE260088AA00EA2189 /* UtilitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043B61EC260088AA00EA2189 /* UtilitiesViewController.xib */; };
-		043B61F0260095C100EA2189 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61EF260095C100EA2189 /* UIColor.swift */; };
 		043B61F426009C0000EA2189 /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043B61F326009BF900EA2189 /* BreeSerif-Regular.ttf */; };
+		043B61F62600C3D000EA2189 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61F52600C3D000EA2189 /* UIFont.swift */; };
+		043B61F92600EC2300EA2189 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61F82600EC2300EA2189 /* BaseNavigationController.swift */; };
+		04F56F752601B1E100780915 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F56F742601B1E100780915 /* TabbarItem.swift */; };
+		04F56F772601D8A400780915 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F56F762601D8A400780915 /* Color.xcassets */; };
+		04F6F87E2602D94F00210E0C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6F87D2602D94F00210E0C /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +38,12 @@
 		043B61E82600889500EA2189 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		043B61EB260088AA00EA2189 /* UtilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesViewController.swift; sourceTree = "<group>"; };
 		043B61EC260088AA00EA2189 /* UtilitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UtilitiesViewController.xib; sourceTree = "<group>"; };
-		043B61EF260095C100EA2189 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		043B61F326009BF900EA2189 /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
+		043B61F52600C3D000EA2189 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		043B61F82600EC2300EA2189 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		04F56F742601B1E100780915 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
+		04F56F762601D8A400780915 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		04F6F87D2602D94F00210E0C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 			children = (
 				043B61F226009BDF00EA2189 /* Font */,
 				043B61CE2600871C00EA2189 /* Assets.xcassets */,
+				04F56F762601D8A400780915 /* Color.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		043B61DC260087BF00EA2189 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				043B61F72600EBBD00EA2189 /* Base */,
 				043B61E22600886800EA2189 /* UtilitiesVC */,
 				043B61E12600886000EA2189 /* ListVC */,
 				043B61E02600885300EA2189 /* SearchVC */,
@@ -110,7 +120,9 @@
 		043B61DD260087D700EA2189 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				043B61EF260095C100EA2189 /* UIColor.swift */,
+				043B61F52600C3D000EA2189 /* UIFont.swift */,
+				04F56F742601B1E100780915 /* TabbarItem.swift */,
+				04F6F87D2602D94F00210E0C /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -163,6 +175,14 @@
 				043B61F326009BF900EA2189 /* BreeSerif-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		043B61F72600EBBD00EA2189 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				043B61F82600EC2300EA2189 /* BaseNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +247,7 @@
 				043B61F426009C0000EA2189 /* BreeSerif-Regular.ttf in Resources */,
 				043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */,
 				043B61EE260088AA00EA2189 /* UtilitiesViewController.xib in Resources */,
+				04F56F772601D8A400780915 /* Color.xcassets in Resources */,
 				043B61EA2600889500EA2189 /* ListViewController.xib in Resources */,
 				043B61E62600888600EA2189 /* SearchViewController.xib in Resources */,
 			);
@@ -240,8 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				043B61ED260088AA00EA2189 /* UtilitiesViewController.swift in Sources */,
-				043B61F0260095C100EA2189 /* UIColor.swift in Sources */,
+				043B61F92600EC2300EA2189 /* BaseNavigationController.swift in Sources */,
 				043B61E52600888600EA2189 /* SearchViewController.swift in Sources */,
+				04F56F752601B1E100780915 /* TabbarItem.swift in Sources */,
+				04F6F87E2602D94F00210E0C /* UIColor.swift in Sources */,
+				043B61F62600C3D000EA2189 /* UIFont.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,

@@ -12,6 +12,10 @@ class UtilitiesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configViews()
+    }
+    
+    func configViews() {
         title = "Utilities"
     }
 
