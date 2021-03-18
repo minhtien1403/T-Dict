@@ -12,6 +12,10 @@ class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "List"
+        configViews()
+    }
+    
+    func configViews() {
+           title = "List"
     }
 }
