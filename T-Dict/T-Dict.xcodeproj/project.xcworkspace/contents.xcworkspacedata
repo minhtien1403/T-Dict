@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:T-Dict.xcodeproj">
+      location = "group:../T-Dict/Enum">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

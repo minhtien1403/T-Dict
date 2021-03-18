@@ -88,3 +88,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+T-Dict/T-Dict/Networking/WordAPI/Request/APIKey.swift
+.DS_Store
