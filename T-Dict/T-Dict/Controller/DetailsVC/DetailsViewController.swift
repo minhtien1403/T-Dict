@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     private var childViews = [UIViewController]()
     private var pageController: UIPageViewController!
     private var currentPageIndex = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +66,6 @@ class DetailsViewController: UIViewController {
         view.addSubview(pageController.view)
     }
 }
-
 extension DetailsViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         return nil

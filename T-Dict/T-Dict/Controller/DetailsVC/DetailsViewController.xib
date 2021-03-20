@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="T_Dict" customModuleProvider="target">
             <connections>
+<<<<<<< HEAD
+=======
+                <outlet property="scrollView" destination="e9p-93-ULK" id="kiK-7m-Knx"/>
+>>>>>>> create UI for details screen
                 <outlet property="segmentControl" destination="Pkp-WZ-aPf" id="ccx-4o-W25"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,10 +31,25 @@
                         <segment title="Rhyme"/>
                     </segments>
                 </segmentedControl>
+<<<<<<< HEAD
+=======
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9p-93-ULK">
+                    <rect key="frame" x="0.0" y="83" width="414" height="779"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="pyV-jv-MfI"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="eTR-km-86O"/>
+                </scrollView>
+>>>>>>> create UI for details screen
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Pkp-WZ-aPf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7E2-Oh-PfK"/>
+<<<<<<< HEAD
+=======
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e9p-93-ULK" secondAttribute="bottom" id="Fdj-RM-Uw8"/>
+                <constraint firstItem="e9p-93-ULK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J8r-qf-FOt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e9p-93-ULK" secondAttribute="trailing" id="aMV-gx-JQe"/>
+                <constraint firstItem="e9p-93-ULK" firstAttribute="top" secondItem="Pkp-WZ-aPf" secondAttribute="bottom" constant="5" id="gO5-C1-Xbh"/>
+>>>>>>> create UI for details screen
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pkp-WZ-aPf" secondAttribute="trailing" id="hIi-wn-7Jd"/>
                 <constraint firstItem="Pkp-WZ-aPf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uif-DB-Vc2"/>
             </constraints>

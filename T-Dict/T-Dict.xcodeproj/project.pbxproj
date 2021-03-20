@@ -321,6 +321,7 @@
 				04F6F8CF260440DE00210E0C /* APIManger.swift */,
 				04F6F8D0260440DE00210E0C /* HTTPMethod.swift */,
 				04F6F8D1260440DE00210E0C /* APIResult.swift */,
+				047E62AD2607111400AE1464 /* BarButtonItem.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -424,6 +425,7 @@
 				04F6F8D4260440DE00210E0C /* HTTPMethod.swift in Sources */,
 				04D5DB4E2604413200D1FC33 /* APIKey.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
+				047E62AE2607111400AE1464 /* BarButtonItem.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,
