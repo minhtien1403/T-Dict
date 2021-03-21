@@ -10,5 +10,5 @@ import Foundation
 
 struct URLs {
     private static var APIBaseUrl = "https://wordsapiv1.p.rapidapi.com"
-    public static let APIGetUrl = APIBaseUrl + "/word"
+    public static let APIGetUrl = APIBaseUrl + "/words"
 }

@@ -9,8 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationViewController" customModule="T_Dict" customModuleProvider="target">
             <connections>
+                <outlet property="pronounceLabel" destination="eFj-Wc-avN" id="vDd-lU-6tx"/>
                 <outlet property="tableView" destination="9U6-Fj-bfh" id="HAM-tB-xNY"/>
+                <outlet property="typeLabel" destination="ODy-7d-yrs" id="ECF-5I-7Cj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordLabel" destination="Puz-zU-EvW" id="H4c-D1-nqZ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

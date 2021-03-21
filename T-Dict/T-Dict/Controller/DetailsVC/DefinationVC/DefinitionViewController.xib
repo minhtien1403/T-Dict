@@ -52,7 +52,6 @@
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OU4-Ux-dgg">
                     <rect key="frame" x="0.0" y="177" width="414" height="636"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -79,7 +78,7 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="129" y="136"/>
+            <point key="canvasLocation" x="128.98550724637681" y="135.9375"/>
         </view>
     </objects>
     <resources>

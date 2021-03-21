@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UtilitiesViewController: UIViewController {
+class UtilitiesViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
