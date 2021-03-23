@@ -16,6 +16,6 @@ class ListViewController: UIViewController {
     }
     
     func configViews() {
-           title = "List"
+        title = "List"
     }
 }

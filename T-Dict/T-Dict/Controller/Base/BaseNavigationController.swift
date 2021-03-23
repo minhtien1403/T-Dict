@@ -18,4 +18,12 @@ class BaseNavigationController: UINavigationController {
                                                   NSAttributedString.Key.font: UIFont.breeSerif(24)]
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        configBarButton()
+    }
+    
+    func configBarButton() {
+        self.viewControllers.first?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
+        self.viewControllers.first?.navigationItem.backBarButtonItem?.tintColor = .white
+    }
 }

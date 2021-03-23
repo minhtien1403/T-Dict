@@ -7,8 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="T_Dict" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="T_Dict" customModuleProvider="target">
             <connections>
+                <outlet property="segmentControl" destination="Pkp-WZ-aPf" id="ccx-4o-W25"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,21 +18,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eeq-LN-xRq">
-                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pkp-WZ-aPf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                    <segments>
+                        <segment title="Definition"/>
+                        <segment title="Synonyms"/>
+                        <segment title="Antonyms"/>
+                        <segment title="Rhyme"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eeq-LN-xRq" secondAttribute="bottom" id="9cg-DH-8iB"/>
-                <constraint firstItem="eeq-LN-xRq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aWl-jE-YmC"/>
-                <constraint firstItem="eeq-LN-xRq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k0l-I4-fZd"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eeq-LN-xRq" secondAttribute="trailing" id="w5d-mi-RxR"/>
+                <constraint firstItem="Pkp-WZ-aPf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7E2-Oh-PfK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pkp-WZ-aPf" secondAttribute="trailing" id="hIi-wn-7Jd"/>
+                <constraint firstItem="Pkp-WZ-aPf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uif-DB-Vc2"/>
             </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="142"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
         </view>
     </objects>
 </document>

@@ -22,7 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func createTabbar(){
         let searchVC = SearchViewController()
-
         let searchNavi = BaseNavigationController(rootViewController: searchVC)
         searchVC.tabBarItem = TabbarItem.search.item
         
