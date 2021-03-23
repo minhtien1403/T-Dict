@@ -26,7 +26,7 @@ class InformationViewController: BaseViewController, UITableViewDelegate, UITabl
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(DefineTableViewCell.nib(), forCellReuseIdentifier: DefineTableViewCell.identifier)
         tableView.contentInset = UIEdgeInsets(top: 0, left: -15, bottom: 0, right: 0)
     }
     
@@ -39,11 +39,9 @@ class InformationViewController: BaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "→ " + dumpData[indexPath.row]
-        cell.textLabel?.textColor = .systemBlue
-        cell.selectionStyle = .none
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: DefineTableViewCell.identifier, for: indexPath) as? DefineTableViewCell
+        cell?.setContent(text: dumpData[indexPath.row])
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchViewController: BaseViewController {
+class SearchViewController: BaseViewController, UINavigationControllerDelegate {
 
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!

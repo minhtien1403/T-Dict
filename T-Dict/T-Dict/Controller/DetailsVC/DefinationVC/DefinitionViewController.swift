@@ -44,7 +44,7 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DefineTableViewCell.identifier, for: indexPath) as? DefineTableViewCell
-        cell?.config(text: "→ \(data[indexPath.section][indexPath.row])" )
+        cell?.setContent(text: data[indexPath.section][indexPath.row])
         return cell ?? UITableViewCell()
     }
     

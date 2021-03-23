@@ -19,14 +19,15 @@ class DefineTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func config(text: String) {
-        label.text = text
+    func setContent(text: String) {
+        label.text = "→ \(text)"
         label.textColor = .systemBlue
         label.numberOfLines = 3
         label.lineBreakMode = .byWordWrapping

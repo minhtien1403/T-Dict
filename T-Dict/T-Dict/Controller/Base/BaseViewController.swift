@@ -12,11 +12,5 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configBarButton()
-    }
-    
-    func configBarButton() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
-        navigationItem.backBarButtonItem?.tintColor = .white
     }
 }

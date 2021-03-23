@@ -8,12 +8,13 @@
 
 import UIKit
 
-class DetailsViewController: BaseViewController {
+class DetailsViewController: BaseViewController, UINavigationControllerDelegate {
 
     @IBOutlet private weak var segmentControl: UISegmentedControl!
     private var childViews = [UIViewController]()
     private var pageController: UIPageViewController!
     private var currentPageIndex = 0
+
     public var word: String?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +46,22 @@ class DetailsViewController: BaseViewController {
         antonymsVC.view.tag = 2
         rhymeVC.view.tag = 3
         childViews = [defineVC, synonymsVC, antonymsVC, rhymeVC]
-        for (index,childView) in childViews.enumerated() {
-            if index == 0 {
-                let view = childView as? DefinitionViewController
-                view?.config(word: word ?? "")
-            }
-            else {
-                let view = childView as? InformationViewController
-                view?.config(word: word ?? "")
-            }
-        }
+        configPages(pages: childViews)
     }
     
+    func configPages(pages: [UIViewController]) {
+        guard let define = pages[0] as? DefinitionViewController else {
+            return
+        }
+        define.config(word: word ?? "")
+        for index in 1..<pages.count {
+            guard let page = pages[index] as? InformationViewController else {
+                return
+            }
+            page.config(word: word ?? "")
+        }
+    }
+
     func setupPageController() {
         pageController = UIPageViewController(transitionStyle: .scroll,
                                               navigationOrientation: .horizontal,

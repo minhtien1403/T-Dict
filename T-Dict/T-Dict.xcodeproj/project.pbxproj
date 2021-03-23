@@ -304,6 +304,7 @@
 		04DC6EBC26044E600039CB9B /* DetailsVC */ = {
 			isa = PBXGroup;
 			children = (
+				045E6AE52609D468009CA1B9 /* DefineCell */,
 				04DC6EC6260453120039CB9B /* InformationVC */,
 				04DC6EC1260450000039CB9B /* DefinationVC */,
 				04DC6EBD26044F760039CB9B /* DetailsViewController.swift */,
@@ -315,7 +316,6 @@
 		04DC6EC1260450000039CB9B /* DefinationVC */ = {
 			isa = PBXGroup;
 			children = (
-				045E6AE52609D468009CA1B9 /* DefineCell */,
 				04DC6EC2260453020039CB9B /* DefinitionViewController.swift */,
 				04DC6EC3260453020039CB9B /* DefinitionViewController.xib */,
 			);
