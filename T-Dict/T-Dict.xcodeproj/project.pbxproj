@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6772614B9AD00A2FD7A /* AlertView.swift */; };
+		0410C67A2614B9AD00A2FD7A /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410C6782614B9AD00A2FD7A /* AlertView.xib */; };
+		0410C6852615641800A2FD7A /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6832615641800A2FD7A /* IconCell.swift */; };
+		0410C6862615641800A2FD7A /* IconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410C6842615641800A2FD7A /* IconCell.xib */; };
+		0410C68D2615A37D00A2FD7A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0410C68C2615A37D00A2FD7A /* Then */; };
 		042D3B9F2610DADB0096BC6E /* SuggestRespone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */; };
 		042D3BA12611CC9A0096BC6E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BA02611CC9A0096BC6E /* String+.swift */; };
 		042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */; };
@@ -15,6 +20,8 @@
 		042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BAC2611D50C0096BC6E /* SuggestCell.swift */; };
 		042D3BB52612F5D40096BC6E /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 042D3BB42612F5D40096BC6E /* Reusable */; };
 		042D3BB72612FDA80096BC6E /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BB62612FDA80096BC6E /* AppSetting.swift */; };
+		042D3BBB2613092F0096BC6E /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BB92613092F0096BC6E /* ListCell.swift */; };
+		042D3BBC2613092F0096BC6E /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BBA2613092F0096BC6E /* ListCell.xib */; };
 		043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C52600871B00EA2189 /* AppDelegate.swift */; };
 		043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C72600871B00EA2189 /* SceneDelegate.swift */; };
 		043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043B61CE2600871C00EA2189 /* Assets.xcassets */; };
@@ -58,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0410C6772614B9AD00A2FD7A /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		0410C6782614B9AD00A2FD7A /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		0410C6832615641800A2FD7A /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		0410C6842615641800A2FD7A /* IconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCell.xib; sourceTree = "<group>"; };
 		042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestRespone.swift; sourceTree = "<group>"; };
 		042D3BA02611CC9A0096BC6E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryCell.xib; sourceTree = "<group>"; };
@@ -65,6 +76,8 @@
 		042D3BAB2611D50C0096BC6E /* SuggestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestCell.xib; sourceTree = "<group>"; };
 		042D3BAC2611D50C0096BC6E /* SuggestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestCell.swift; sourceTree = "<group>"; };
 		042D3BB62612FDA80096BC6E /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		042D3BB92613092F0096BC6E /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		042D3BBA2613092F0096BC6E /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		043B61C22600871B00EA2189 /* T-Dict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Dict.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043B61C52600871B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043B61C72600871B00EA2189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,12 +128,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				042D3BB52612F5D40096BC6E /* Reusable in Frameworks */,
+				0410C68D2615A37D00A2FD7A /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410C6662614A1EE00A2FD7A /* CustomAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				0410C6822615640000A2FD7A /* IconCell */,
+				0410C6772614B9AD00A2FD7A /* AlertView.swift */,
+				0410C6782614B9AD00A2FD7A /* AlertView.xib */,
+			);
+			path = CustomAlerts;
+			sourceTree = "<group>";
+		};
+		0410C6822615640000A2FD7A /* IconCell */ = {
+			isa = PBXGroup;
+			children = (
+				0410C6832615641800A2FD7A /* IconCell.swift */,
+				0410C6842615641800A2FD7A /* IconCell.xib */,
+			);
+			path = IconCell;
+			sourceTree = "<group>";
+		};
 		042D3B93260F7C220096BC6E /* SearchHistoryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +170,15 @@
 				042D3BAB2611D50C0096BC6E /* SuggestCell.xib */,
 			);
 			path = SearchSuggestionCell;
+			sourceTree = "<group>";
+		};
+		042D3BB8261308E90096BC6E /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				042D3BB92613092F0096BC6E /* ListCell.swift */,
+				042D3BBA2613092F0096BC6E /* ListCell.xib */,
+			);
+			path = ListCell;
 			sourceTree = "<group>";
 		};
 		043B61B92600871B00EA2189 = {
@@ -245,6 +287,8 @@
 		043B61E12600886000EA2189 /* ListVC */ = {
 			isa = PBXGroup;
 			children = (
+				0410C6662614A1EE00A2FD7A /* CustomAlerts */,
+				042D3BB8261308E90096BC6E /* ListCell */,
 				043B61E72600889500EA2189 /* ListViewController.swift */,
 				043B61E82600889500EA2189 /* ListViewController.xib */,
 			);
@@ -402,6 +446,7 @@
 			name = "T-Dict";
 			packageProductDependencies = (
 				042D3BB42612F5D40096BC6E /* Reusable */,
+				0410C68C2615A37D00A2FD7A /* Then */,
 			);
 			productName = "T-Dict";
 			productReference = 043B61C22600871B00EA2189 /* T-Dict.app */;
@@ -433,6 +478,7 @@
 			mainGroup = 043B61B92600871B00EA2189;
 			packageReferences = (
 				042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */,
+				0410C68B2615A37D00A2FD7A /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 043B61C32600871B00EA2189 /* Products */;
 			projectDirPath = "";
@@ -461,6 +507,9 @@
 				045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */,
 				043B61EA2600889500EA2189 /* ListViewController.xib in Resources */,
 				043B61E62600888600EA2189 /* SearchViewController.xib in Resources */,
+				042D3BBC2613092F0096BC6E /* ListCell.xib in Resources */,
+				0410C6862615641800A2FD7A /* IconCell.xib in Resources */,
+				0410C67A2614B9AD00A2FD7A /* AlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +523,7 @@
 				043B61ED260088AA00EA2189 /* UtilitiesViewController.swift in Sources */,
 				043B61F92600EC2300EA2189 /* BaseNavigationController.swift in Sources */,
 				043B61E52600888600EA2189 /* SearchViewController.swift in Sources */,
+				042D3BBB2613092F0096BC6E /* ListCell.swift in Sources */,
 				04DC6EBF26044F760039CB9B /* DetailsViewController.swift in Sources */,
 				04DC6EC4260453020039CB9B /* DefinitionViewController.swift in Sources */,
 				04EB6F42260C3A650040B94A /* DataType.swift in Sources */,
@@ -501,7 +551,9 @@
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
+				0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,
+				0410C6852615641800A2FD7A /* IconCell.swift in Sources */,
 				04DC6ECB2604536C0039CB9B /* InfomartionViewController.swift in Sources */,
 				045E6AE82609D481009CA1B9 /* DefineTableViewCell.swift in Sources */,
 				04D5DB4C2604413200D1FC33 /* DefinitionsResponse.swift in Sources */,
@@ -696,6 +748,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0410C68B2615A37D00A2FD7A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
 		042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AliSoftware/Reusable";
@@ -707,6 +767,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0410C68C2615A37D00A2FD7A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0410C68B2615A37D00A2FD7A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		042D3BB42612F5D40096BC6E /* Reusable */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */;

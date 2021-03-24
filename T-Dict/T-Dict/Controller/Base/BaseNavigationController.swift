@@ -27,5 +27,6 @@ extension BaseNavigationController: UINavigationControllerDelegate {
         let item = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
         viewController.navigationItem.backBarButtonItem = item
         viewController.navigationItem.backBarButtonItem?.tintColor = .white
+        viewController.navigationItem.rightBarButtonItem?.tintColor = .white
     }
 }
