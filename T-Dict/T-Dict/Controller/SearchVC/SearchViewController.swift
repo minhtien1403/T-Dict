@@ -18,14 +18,15 @@ class SearchViewController: BaseViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         configViews()
         configTableView()
+        searchBar.delegate = self
     }
     
     func configViews() {
         title = "Search"
-        searchBar.delegate = self
         clearButton.isHidden = true
         clearButton.isEnabled = false
     }
+    
     func configTableView() {
         tableView.layer.masksToBounds = true
         tableView.layer.cornerRadius = 5
@@ -35,6 +36,7 @@ class SearchViewController: BaseViewController, UINavigationControllerDelegate {
         tableView.isHidden = true
     }
 }
+
 extension SearchViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         tableView.isHidden = false
@@ -46,19 +48,18 @@ extension SearchViewController: UISearchBarDelegate {
         tableView.isHidden = true
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        caccelSearchBar()
+        cancelSearchBar()
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let word = searchBar.text else {
             searchBar.endEditing(true)
             return
         }
-        let vc = DetailsViewController()
-        vc.word = word
+        let vc = DetailsViewController(word: word)
         navigationController?.pushViewController(vc, animated: true)
-        caccelSearchBar()
+        cancelSearchBar()
     }
-    func caccelSearchBar() {
+    func cancelSearchBar() {
         searchBar.text = ""
         searchBar.showsCancelButton = false
         searchBar.endEditing(true)

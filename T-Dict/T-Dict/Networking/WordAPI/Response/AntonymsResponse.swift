@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AntonymsResponse {
+struct AntonymsResponse: Codable {
     let word: String?
     let antonyms: [String]?
 }
