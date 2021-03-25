@@ -16,7 +16,7 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet private weak var tableView: UITableView!
     private let tableSection = ["Definition","Example"]
     private var data = [[String]]()
-        
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableViews()
@@ -26,12 +26,16 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(DefineTableViewCell.nib(), forCellReuseIdentifier: DefineTableViewCell.identifier)
         tableView.contentInset = UIEdgeInsets(top: 0, left: -15, bottom: 0, right: 0)
-        let defi = ["some definition"]
-        let example = ["some example"]
+        let defi = ["some definition very very very long"]
+        let example = ["some very very long example"]
         data.append(defi)
         data.append(example)
+    }
+    
+    func config(word: String) {
+        wordLabel.text = word
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,12 +43,9 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "→ " + data[indexPath.section][indexPath.row]
-        cell.textLabel?.textColor = .systemBlue
-        cell.textLabel?.lineBreakMode = .byWordWrapping
-        cell.textLabel?.numberOfLines = 3
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: DefineTableViewCell.identifier, for: indexPath) as? DefineTableViewCell
+        cell?.setContent(text: data[indexPath.section][indexPath.row])
+        return cell ?? UITableViewCell()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

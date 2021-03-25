@@ -7,35 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="T_Dict" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="T_Dict">
             <connections>
-                <outlet property="segmentControl" destination="Pkp-WZ-aPf" id="ccx-4o-W25"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="segmentControl" destination="TB3-W1-G98" id="HYr-6g-O0F"/>
+                <outlet property="view" destination="iN0-l3-epB" id="P3e-k4-Hab"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Details" customModule="None">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pkp-WZ-aPf">
-                    <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TB3-W1-G98">
+                    <rect key="frame" x="0.0" y="88" width="414" height="32"/>
                     <segments>
                         <segment title="Definition"/>
                         <segment title="Synonyms"/>
                         <segment title="Antonyms"/>
                         <segment title="Rhyme"/>
                     </segments>
+                    <connections>
+                        <action selector="didChangeSegment:" destination="-1" eventType="valueChanged" id="pbn-ID-bwc"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Pkp-WZ-aPf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7E2-Oh-PfK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pkp-WZ-aPf" secondAttribute="trailing" id="hIi-wn-7Jd"/>
-                <constraint firstItem="Pkp-WZ-aPf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uif-DB-Vc2"/>
+                <constraint firstItem="TB3-W1-G98" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="VvI-PV-uiv"/>
+                <constraint firstItem="TB3-W1-G98" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eCp-MR-WwX"/>
+                <constraint firstItem="TB3-W1-G98" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="scW-7a-bbF"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="65" y="48"/>
         </view>
     </objects>
 </document>
