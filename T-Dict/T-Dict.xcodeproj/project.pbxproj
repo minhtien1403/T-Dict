@@ -40,6 +40,7 @@
 		04DC6ECB2604536C0039CB9B /* InfomartionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6EC92604536C0039CB9B /* InfomartionViewController.swift */; };
 		04DC6ECC2604536C0039CB9B /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6ECA2604536C0039CB9B /* InformationViewController.xib */; };
 		04DC6ED8260458A90039CB9B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6ED7260458A90039CB9B /* UIView.swift */; };
+		04EB6F42260C3A650040B94A /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB6F41260C3A650040B94A /* DataType.swift */; };
 		04F56F772601D8A400780915 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F56F762601D8A400780915 /* Color.xcassets */; };
 		04F6F87E2602D94F00210E0C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6F87D2602D94F00210E0C /* UIColor.swift */; };
 		04F6F8D2260440DE00210E0C /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6F8CE260440DE00210E0C /* TabbarItem.swift */; };
@@ -84,6 +85,7 @@
 		04DC6EC92604536C0039CB9B /* InfomartionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomartionViewController.swift; sourceTree = "<group>"; };
 		04DC6ECA2604536C0039CB9B /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 		04DC6ED7260458A90039CB9B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		04EB6F41260C3A650040B94A /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		04F56F762601D8A400780915 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		04F6F87D2602D94F00210E0C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		04F6F8CE260440DE00210E0C /* TabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				04F6F8CF260440DE00210E0C /* APIManger.swift */,
 				04F6F8D0260440DE00210E0C /* HTTPMethod.swift */,
 				04F6F8D1260440DE00210E0C /* APIResult.swift */,
+				04EB6F41260C3A650040B94A /* DataType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				043B61E52600888600EA2189 /* SearchViewController.swift in Sources */,
 				04DC6EBF26044F760039CB9B /* DetailsViewController.swift in Sources */,
 				04DC6EC4260453020039CB9B /* DefinitionViewController.swift in Sources */,
+				04EB6F42260C3A650040B94A /* DataType.swift in Sources */,
 				045E6AE22609BE21009CA1B9 /* BaseViewController.swift in Sources */,
 				04D5DB522604414000D1FC33 /* URLs.swift in Sources */,
 				04DC6ED8260458A90039CB9B /* UIView.swift in Sources */,

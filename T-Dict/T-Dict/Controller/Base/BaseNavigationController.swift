@@ -20,7 +20,7 @@ class BaseNavigationController: UINavigationController {
     }
 }
 
-extension BaseNavigationController: UINavigationBarDelegate, UINavigationControllerDelegate {
+extension BaseNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {

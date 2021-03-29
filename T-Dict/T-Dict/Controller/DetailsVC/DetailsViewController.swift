@@ -14,8 +14,19 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
     private var childViews = [UIViewController]()
     private var pageController: UIPageViewController!
     private var currentPageIndex = 0
-
-    public var word: String?
+    private var defines = [String]()
+    private var examples = [String]()
+    private var word: String?
+    
+    init(word: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.word = word
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configViews()
@@ -24,6 +35,7 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
         setupPageController()
     }
     
+    //MARK: - Config View
     func configViews() {
         title = "Details"
     }
@@ -38,9 +50,9 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
     
     func setupChildViews() {
         let defineVC = DefinitionViewController()
-        let synonymsVC = InformationViewController()
-        let antonymsVC = InformationViewController()
-        let rhymeVC = InformationViewController()
+        let synonymsVC = InformationViewController(type: .synonyms)
+        let antonymsVC = InformationViewController(type: .antonyms)
+        let rhymeVC = InformationViewController(type: .rhymes)
         defineVC.view.tag = 0
         synonymsVC.view.tag = 1
         antonymsVC.view.tag = 2
@@ -84,7 +96,7 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
         addChild(pageController)
         view.addSubview(pageController.view)
     }
-    
+    //MARK: - Handle Events
     @IBAction func didChangeSegment(_ sender: Any) {
         let nextIndex = segmentControl.selectedSegmentIndex
         let direction = nextIndex < currentPageIndex ? UIPageViewController.NavigationDirection.reverse : UIPageViewController.NavigationDirection.forward
