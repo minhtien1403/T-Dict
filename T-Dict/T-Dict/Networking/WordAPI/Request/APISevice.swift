@@ -10,7 +10,7 @@ struct APIService {
     ]
     
     func request(word: String, type: APIManager, method: HTTPMethod, completion: @escaping (APIResult) -> Void) {
-        let urlString = "\(URLs.APIGetUrl)/\(word)/\(type.rawValue)"
+        let urlString = "\(URLs.APIGetUrl)/\(word.safeString)/\(type.rawValue)"
         guard let url = URL(string: urlString) else {
             completion(.failure(.failedToGetURL))
             return
@@ -78,5 +78,9 @@ struct APIService {
     
     func getPronounce(word: String, completion: @escaping (PronounceResponse?) -> Void) {
         fetchDataFromAPI(word: word, type: .pronunciation, completion: completion)
+    }
+    
+    func getSuggest(word: String, completion: @escaping (SuggestResponse?) -> Void) {
+        fetchDataFromAPI(word: word, type: .also, completion: completion)
     }
 }

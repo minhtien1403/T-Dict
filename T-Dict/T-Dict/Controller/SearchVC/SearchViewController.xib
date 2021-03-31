@@ -25,15 +25,18 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-qZ-xU4">
-                    <rect key="frame" x="5" y="110" width="404" height="463.5"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="463.5"/>
+                    <color key="backgroundColor" red="0.94995337719999995" green="0.9500743747" blue="0.9531216025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-wH-Em4">
-                    <rect key="frame" x="5" y="574" width="404" height="22"/>
+                    <rect key="frame" x="5" y="563.5" width="404" height="22"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title=" Clear Search History" image="trash" catalog="system">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="didTapClearSearchHistory:" destination="-1" eventType="touchUpInside" id="Epe-N1-z3h"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -43,11 +46,11 @@
                 <constraint firstItem="Gs5-5y-Cvi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Gb6-DU-DPG"/>
                 <constraint firstItem="Gs5-5y-Cvi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HTs-7G-QTZ"/>
                 <constraint firstItem="5e7-wH-Em4" firstAttribute="top" secondItem="cxW-qZ-xU4" secondAttribute="bottom" id="IVr-st-2Qm"/>
-                <constraint firstItem="cxW-qZ-xU4" firstAttribute="top" secondItem="Gs5-5y-Cvi" secondAttribute="bottom" constant="10" id="QQb-w4-jEe"/>
+                <constraint firstItem="cxW-qZ-xU4" firstAttribute="top" secondItem="Gs5-5y-Cvi" secondAttribute="bottom" id="QQb-w4-jEe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5e7-wH-Em4" secondAttribute="trailing" constant="5" id="aVW-MR-3l6"/>
                 <constraint firstItem="5e7-wH-Em4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="eJe-Rc-Yv2"/>
-                <constraint firstItem="cxW-qZ-xU4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="ipr-li-OuA"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cxW-qZ-xU4" secondAttribute="trailing" constant="5" id="zFd-u2-4tP"/>
+                <constraint firstItem="cxW-qZ-xU4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ipr-li-OuA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cxW-qZ-xU4" secondAttribute="trailing" id="zFd-u2-4tP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>

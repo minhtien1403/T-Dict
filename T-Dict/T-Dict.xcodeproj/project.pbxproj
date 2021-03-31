@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042D3B9F2610DADB0096BC6E /* SuggestRespone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */; };
+		042D3BA12611CC9A0096BC6E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BA02611CC9A0096BC6E /* String+.swift */; };
+		042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */; };
+		042D3BAA2611D43A0096BC6E /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BA82611D43A0096BC6E /* SearchHistoryCell.swift */; };
+		042D3BAD2611D50D0096BC6E /* SuggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BAB2611D50C0096BC6E /* SuggestCell.xib */; };
+		042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BAC2611D50C0096BC6E /* SuggestCell.swift */; };
+		042D3BB52612F5D40096BC6E /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 042D3BB42612F5D40096BC6E /* Reusable */; };
+		042D3BB72612FDA80096BC6E /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BB62612FDA80096BC6E /* AppSetting.swift */; };
 		043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C52600871B00EA2189 /* AppDelegate.swift */; };
 		043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C72600871B00EA2189 /* SceneDelegate.swift */; };
 		043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043B61CE2600871C00EA2189 /* Assets.xcassets */; };
@@ -50,6 +58,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestRespone.swift; sourceTree = "<group>"; };
+		042D3BA02611CC9A0096BC6E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryCell.xib; sourceTree = "<group>"; };
+		042D3BA82611D43A0096BC6E /* SearchHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		042D3BAB2611D50C0096BC6E /* SuggestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestCell.xib; sourceTree = "<group>"; };
+		042D3BAC2611D50C0096BC6E /* SuggestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestCell.swift; sourceTree = "<group>"; };
+		042D3BB62612FDA80096BC6E /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		043B61C22600871B00EA2189 /* T-Dict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Dict.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043B61C52600871B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043B61C72600871B00EA2189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,12 +114,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042D3BB52612F5D40096BC6E /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042D3B93260F7C220096BC6E /* SearchHistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				042D3BA82611D43A0096BC6E /* SearchHistoryCell.swift */,
+				042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */,
+			);
+			path = SearchHistoryCell;
+			sourceTree = "<group>";
+		};
+		042D3B98260F7C560096BC6E /* SearchSuggestionCell */ = {
+			isa = PBXGroup;
+			children = (
+				042D3BAC2611D50C0096BC6E /* SuggestCell.swift */,
+				042D3BAB2611D50C0096BC6E /* SuggestCell.xib */,
+			);
+			path = SearchSuggestionCell;
+			sourceTree = "<group>";
+		};
 		043B61B92600871B00EA2189 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +177,7 @@
 			children = (
 				043B61C52600871B00EA2189 /* AppDelegate.swift */,
 				043B61C72600871B00EA2189 /* SceneDelegate.swift */,
+				042D3BB62612FDA80096BC6E /* AppSetting.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -176,6 +211,7 @@
 				04F6F87D2602D94F00210E0C /* UIColor.swift */,
 				04DC6ED7260458A90039CB9B /* UIView.swift */,
 				045E6ADD2609865F009CA1B9 /* UIImage.swift */,
+				042D3BA02611CC9A0096BC6E /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -198,6 +234,8 @@
 		043B61E02600885300EA2189 /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
+				042D3B98260F7C560096BC6E /* SearchSuggestionCell */,
+				042D3B93260F7C220096BC6E /* SearchHistoryCell */,
 				043B61E32600888600EA2189 /* SearchViewController.swift */,
 				043B61E42600888600EA2189 /* SearchViewController.xib */,
 			);
@@ -275,6 +313,7 @@
 				04D5DB412604413200D1FC33 /* ExampleResponse.swift */,
 				04D5DB422604413200D1FC33 /* DefinitionsResponse.swift */,
 				04D5DB432604413200D1FC33 /* AntonymsResponse.swift */,
+				042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -361,6 +400,9 @@
 			dependencies = (
 			);
 			name = "T-Dict";
+			packageProductDependencies = (
+				042D3BB42612F5D40096BC6E /* Reusable */,
+			);
 			productName = "T-Dict";
 			productReference = 043B61C22600871B00EA2189 /* T-Dict.app */;
 			productType = "com.apple.product-type.application";
@@ -389,6 +431,9 @@
 				Base,
 			);
 			mainGroup = 043B61B92600871B00EA2189;
+			packageReferences = (
+				042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = 043B61C32600871B00EA2189 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -408,9 +453,11 @@
 				04DC6EC5260453020039CB9B /* DefinitionViewController.xib in Resources */,
 				043B61F426009C0000EA2189 /* BreeSerif-Regular.ttf in Resources */,
 				043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */,
+				042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */,
 				043B61EE260088AA00EA2189 /* UtilitiesViewController.xib in Resources */,
 				04F56F772601D8A400780915 /* Color.xcassets in Resources */,
 				045E6AE92609D481009CA1B9 /* DefineTableViewCell.xib in Resources */,
+				042D3BAD2611D50D0096BC6E /* SuggestCell.xib in Resources */,
 				045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */,
 				043B61EA2600889500EA2189 /* ListViewController.xib in Resources */,
 				043B61E62600888600EA2189 /* SearchViewController.xib in Resources */,
@@ -434,18 +481,23 @@
 				04D5DB522604414000D1FC33 /* URLs.swift in Sources */,
 				04DC6ED8260458A90039CB9B /* UIView.swift in Sources */,
 				04F6F8D5260440DE00210E0C /* APIResult.swift in Sources */,
+				042D3BB72612FDA80096BC6E /* AppSetting.swift in Sources */,
 				04F6F8D3260440DE00210E0C /* APIManger.swift in Sources */,
+				042D3BA12611CC9A0096BC6E /* String+.swift in Sources */,
 				04D5DB482604413200D1FC33 /* SynonysmResponse.swift in Sources */,
+				042D3B9F2610DADB0096BC6E /* SuggestRespone.swift in Sources */,
 				04D5DB4B2604413200D1FC33 /* ExampleResponse.swift in Sources */,
 				045E6ADE2609865F009CA1B9 /* UIImage.swift in Sources */,
 				04F6F87E2602D94F00210E0C /* UIColor.swift in Sources */,
 				043B61F62600C3D000EA2189 /* UIFont.swift in Sources */,
 				04F6F8D2260440DE00210E0C /* TabbarItem.swift in Sources */,
+				042D3BAA2611D43A0096BC6E /* SearchHistoryCell.swift in Sources */,
 				04D5DB4A2604413200D1FC33 /* PronounceResponse.swift in Sources */,
 				04D5DB492604413200D1FC33 /* RhymeResponse.swift in Sources */,
 				04D5DB4F2604413200D1FC33 /* APISevice.swift in Sources */,
 				04F6F8D4260440DE00210E0C /* HTTPMethod.swift in Sources */,
 				04D5DB4E2604413200D1FC33 /* APIKey.swift in Sources */,
+				042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
@@ -642,6 +694,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		042D3BB42612F5D40096BC6E /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042D3BB32612F5D40096BC6E /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 043B61BA2600871B00EA2189 /* Project object */;
 }
