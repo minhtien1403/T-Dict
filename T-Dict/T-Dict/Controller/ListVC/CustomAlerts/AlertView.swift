@@ -11,10 +11,12 @@ import Then
 
 final class AlertViewController: UIViewController {
     
+    @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var collectionView: UICollectionView!
     private let icons = [ListIcon.star, ListIcon.tree, ListIcon.food, ListIcon.car]
     var didTapCancel: (() -> Void)?
-    var lastIndex: IndexPath?
+    var didTapAddNewList: ((String, String) -> Void)?
+    var selectedIndex: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,15 @@ final class AlertViewController: UIViewController {
     }
     
     @IBAction func didTapAdd(_ sender: Any) {
+        if textField.text?.isEmpty ?? true {
+            alertError(message: "Give It a Name")
+            return
+        }
+        guard let index = selectedIndex else {
+            alertError(message: "Select a Icon please")
+            return
+        }
+        didTapAddNewList?(textField.text ?? "", icons[index].rawValue)
     }
 }
 
@@ -53,5 +64,9 @@ extension AlertViewController: UICollectionViewDataSource, UICollectionViewDeleg
         let cell = collectionView.dequeueReusableCell(for: indexPath) as IconCell
         cell.setContent(icon: icons[indexPath.row].icon)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
     }
 }

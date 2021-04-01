@@ -13,7 +13,7 @@ extension UIImage {
     static let addIcon = UIImage(systemName: "plus")
 }
 
-enum ListIcon {
+enum ListIcon: String {
     case star
     case tree
     case food
