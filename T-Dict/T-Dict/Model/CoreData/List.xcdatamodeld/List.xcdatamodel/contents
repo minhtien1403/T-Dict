@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="List" representedClassName="List" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ListItem" representedClassName="ListItem" syncable="YES">
+        <attribute name="parentList" optional="YES" attributeType="String"/>
+        <attribute name="pronounce" optional="YES" attributeType="String"/>
+        <attribute name="word" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="List" positionX="-323.2890625" positionY="11" width="128" height="73"/>
+        <element name="ListItem" positionX="129.1015625" positionY="146.640625" width="128" height="88"/>
+    </elements>
+</model>

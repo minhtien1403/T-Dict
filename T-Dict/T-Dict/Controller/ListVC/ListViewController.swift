@@ -11,7 +11,7 @@ import UIKit
 final class ListViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
-    private var lists = [String]()
+    private var lists = [List]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ final class ListViewController: BaseViewController {
     func configViews() {
         title = "List"
         view.backgroundColor = .systemGray6
+        lists = CoreDataManager.ListManager.shared.fetchAllList()
     }
     
     func configNavigationBar() {
@@ -53,6 +54,13 @@ final class ListViewController: BaseViewController {
             self?.dismiss(animated: true, completion: nil)
             self?.tabBarController?.tabBar.isHidden = false
         }
+        alert.didTapAddNewList = { [weak self] name, icon in
+            CoreDataManager.ListManager.shared.addNewList(name: name, icon: icon)
+            self?.dismiss(animated: true, completion: nil)
+            self?.lists = CoreDataManager.ListManager.shared.fetchAllList()
+            self?.tableView.reloadData()
+            self?.tabBarController?.tabBar.isHidden = false
+        }
         present(alert, animated: true, completion: nil)
         tabBarController?.tabBar.isHidden = true
     }
@@ -65,7 +73,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as ListCell
-        cell.setContent(text: "List Name", icon: ListIcon.tree)
+        cell.setContent(text: lists[indexPath.row].name ?? "",
+                        icon: ListIcon(rawValue: lists[indexPath.row].icon ?? "star") ?? ListIcon.star )
         return cell
     }
     
@@ -81,5 +90,20 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
             animations: {
                 cell.alpha = 1
         })
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            let item = lists[indexPath.row]
+            CoreDataManager.ListManager.shared.deleteList(list: item)
+            lists.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+        }
     }
 }

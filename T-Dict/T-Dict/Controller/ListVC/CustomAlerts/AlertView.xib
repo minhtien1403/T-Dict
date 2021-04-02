@@ -16,6 +16,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="T_Dict" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="O3x-oC-YqS" id="0lI-xY-fCh"/>
+                <outlet property="textField" destination="tip-7s-pY4" id="Xcr-HQ-5So"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
