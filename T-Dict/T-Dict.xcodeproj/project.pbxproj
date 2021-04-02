@@ -16,7 +16,7 @@
 		0410C6D1261607BE00A2FD7A /* List+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6CD261607BE00A2FD7A /* List+CoreDataClass.swift */; };
 		0410C6D3261607BE00A2FD7A /* ListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6CF261607BE00A2FD7A /* ListItem+CoreDataClass.swift */; };
 		0410C6D72616081900A2FD7A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6D62616081900A2FD7A /* CoreDataManager.swift */; };
-		0410C6D92616087C00A2FD7A /* CoreDataManager.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6D82616087C00A2FD7A /* CoreDataManager.List.swift */; };
+		0410C6D92616087C00A2FD7A /* CoreDataManager.ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6D82616087C00A2FD7A /* CoreDataManager.ListManager.swift */; };
 		042D3B9F2610DADB0096BC6E /* SuggestRespone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */; };
 		042D3BA12611CC9A0096BC6E /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BA02611CC9A0096BC6E /* String+.swift */; };
 		042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */; };
@@ -47,6 +47,11 @@
 		045E6AE92609D481009CA1B9 /* DefineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */; };
 		04C735C92616B23400658C7A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735C82616B23400658C7A /* CoreDataService.swift */; };
 		04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */; };
+		04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */; };
+		04C735D12616D07B00658C7A /* ListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CF2616D07B00658C7A /* ListItemViewController.swift */; };
+		04C735D22616D07B00658C7A /* ListItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C735D02616D07B00658C7A /* ListItemViewController.xib */; };
+		04C735D62616D1B300658C7A /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735D42616D1B300658C7A /* ListItemCell.swift */; };
+		04C735D72616D1B300658C7A /* ListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C735D52616D1B300658C7A /* ListItemCell.xib */; };
 		04D5DB482604413200D1FC33 /* SynonysmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB3E2604413200D1FC33 /* SynonysmResponse.swift */; };
 		04D5DB492604413200D1FC33 /* RhymeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB3F2604413200D1FC33 /* RhymeResponse.swift */; };
 		04D5DB4A2604413200D1FC33 /* PronounceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB402604413200D1FC33 /* PronounceResponse.swift */; };
@@ -80,7 +85,7 @@
 		0410C6CD261607BE00A2FD7A /* List+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0410C6CF261607BE00A2FD7A /* ListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0410C6D62616081900A2FD7A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		0410C6D82616087C00A2FD7A /* CoreDataManager.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.List.swift; sourceTree = "<group>"; };
+		0410C6D82616087C00A2FD7A /* CoreDataManager.ListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.ListManager.swift; sourceTree = "<group>"; };
 		042D3B9E2610DADB0096BC6E /* SuggestRespone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestRespone.swift; sourceTree = "<group>"; };
 		042D3BA02611CC9A0096BC6E /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		042D3BA72611D43A0096BC6E /* SearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryCell.xib; sourceTree = "<group>"; };
@@ -112,6 +117,11 @@
 		045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineTableViewCell.xib; sourceTree = "<group>"; };
 		04C735C82616B23400658C7A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
+		04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+ListItemManager.swift"; sourceTree = "<group>"; };
+		04C735CF2616D07B00658C7A /* ListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewController.swift; sourceTree = "<group>"; };
+		04C735D02616D07B00658C7A /* ListItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemViewController.xib; sourceTree = "<group>"; };
+		04C735D42616D1B300658C7A /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		04C735D52616D1B300658C7A /* ListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemCell.xib; sourceTree = "<group>"; };
 		04D5DB3E2604413200D1FC33 /* SynonysmResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynonysmResponse.swift; sourceTree = "<group>"; };
 		04D5DB3F2604413200D1FC33 /* RhymeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeResponse.swift; sourceTree = "<group>"; };
 		04D5DB402604413200D1FC33 /* PronounceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PronounceResponse.swift; sourceTree = "<group>"; };
@@ -199,7 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				0410C6D62616081900A2FD7A /* CoreDataManager.swift */,
-				0410C6D82616087C00A2FD7A /* CoreDataManager.List.swift */,
+				0410C6D82616087C00A2FD7A /* CoreDataManager.ListManager.swift */,
+				04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -340,6 +351,7 @@
 		043B61E12600886000EA2189 /* ListVC */ = {
 			isa = PBXGroup;
 			children = (
+				04C735CE2616D05000658C7A /* ListItemVC */,
 				0410C6662614A1EE00A2FD7A /* CustomAlerts */,
 				042D3BB8261308E90096BC6E /* ListCell */,
 				043B61E72600889500EA2189 /* ListViewController.swift */,
@@ -381,6 +393,25 @@
 				045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */,
 			);
 			path = DefineCell;
+			sourceTree = "<group>";
+		};
+		04C735CE2616D05000658C7A /* ListItemVC */ = {
+			isa = PBXGroup;
+			children = (
+				04C735D32616D18F00658C7A /* ListItemCell */,
+				04C735CF2616D07B00658C7A /* ListItemViewController.swift */,
+				04C735D02616D07B00658C7A /* ListItemViewController.xib */,
+			);
+			path = ListItemVC;
+			sourceTree = "<group>";
+		};
+		04C735D32616D18F00658C7A /* ListItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				04C735D42616D1B300658C7A /* ListItemCell.swift */,
+				04C735D52616D1B300658C7A /* ListItemCell.xib */,
+			);
+			path = ListItemCell;
 			sourceTree = "<group>";
 		};
 		04D5DB3B2604413200D1FC33 /* Networking */ = {
@@ -549,12 +580,14 @@
 			files = (
 				04DC6ECC2604536C0039CB9B /* InformationViewController.xib in Resources */,
 				043B61D22600871C00EA2189 /* LaunchScreen.storyboard in Resources */,
+				04C735D72616D1B300658C7A /* ListItemCell.xib in Resources */,
 				04DC6EC5260453020039CB9B /* DefinitionViewController.xib in Resources */,
 				043B61F426009C0000EA2189 /* BreeSerif-Regular.ttf in Resources */,
 				043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */,
 				042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */,
 				043B61EE260088AA00EA2189 /* UtilitiesViewController.xib in Resources */,
 				04F56F772601D8A400780915 /* Color.xcassets in Resources */,
+				04C735D22616D07B00658C7A /* ListItemViewController.xib in Resources */,
 				045E6AE92609D481009CA1B9 /* DefineTableViewCell.xib in Resources */,
 				042D3BAD2611D50D0096BC6E /* SuggestCell.xib in Resources */,
 				045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */,
@@ -598,6 +631,7 @@
 				04F6F8D2260440DE00210E0C /* TabbarItem.swift in Sources */,
 				042D3BAA2611D43A0096BC6E /* SearchHistoryCell.swift in Sources */,
 				0410C6D72616081900A2FD7A /* CoreDataManager.swift in Sources */,
+				04C735D62616D1B300658C7A /* ListItemCell.swift in Sources */,
 				04D5DB4A2604413200D1FC33 /* PronounceResponse.swift in Sources */,
 				04D5DB492604413200D1FC33 /* RhymeResponse.swift in Sources */,
 				04D5DB4F2604413200D1FC33 /* APISevice.swift in Sources */,
@@ -611,10 +645,12 @@
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
 				0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,
-				0410C6D92616087C00A2FD7A /* CoreDataManager.List.swift in Sources */,
+				0410C6D92616087C00A2FD7A /* CoreDataManager.ListManager.swift in Sources */,
 				04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */,
 				0410C6852615641800A2FD7A /* IconCell.swift in Sources */,
 				04DC6ECB2604536C0039CB9B /* InfomartionViewController.swift in Sources */,
+				04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */,
+				04C735D12616D07B00658C7A /* ListItemViewController.swift in Sources */,
 				045E6AE82609D481009CA1B9 /* DefineTableViewCell.swift in Sources */,
 				04D5DB4C2604413200D1FC33 /* DefinitionsResponse.swift in Sources */,
 			);

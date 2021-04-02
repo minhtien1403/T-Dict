@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsViewController: BaseViewController, UINavigationControllerDelegate {
-
+    
     @IBOutlet private weak var segmentControl: UISegmentedControl!
     private var childViews = [UIViewController]()
     private var pageController: UIPageViewController!
@@ -44,7 +44,7 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.listImage,
                                                             style: .plain,
                                                             target: self,
-                                                            action: nil)
+                                                            action: #selector(didTapAddToList))
         navigationItem.rightBarButtonItem?.tintColor = .white
     }
     
@@ -62,7 +62,7 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
     }
     
     func configPages(pages: [UIViewController]) {
-        guard let define = pages[0] as? DefinitionViewController else {
+        guard let define = pages.first as? DefinitionViewController else {
             return
         }
         define.config(word: word ?? "")
@@ -73,7 +73,7 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
             page.config(word: word ?? "")
         }
     }
-
+    
     func setupPageController() {
         pageController = UIPageViewController(transitionStyle: .scroll,
                                               navigationOrientation: .horizontal,
@@ -105,6 +105,24 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
                                           animated: true,
                                           completion: nil)
         currentPageIndex = nextIndex
+    }
+    
+    @objc func didTapAddToList() {
+        guard let word = word else {
+            print("Failed to add")
+            return
+        }
+        guard let definceVC = childViews.first as? DefinitionViewController else {
+            alertError(message: "Some thing wrong")
+            return
+        }
+        let vc = ListViewController()
+        vc.didTapCell = { [weak self] listname in
+            if !CoreDataManager.ListItemManager.shared.addItemToList(word: word, pronounce: definceVC.getPronounce(), listName: listname) {
+                self?.alertError(message: "This word is already in this List")
+            }
+        }
+        present(vc, animated: true, completion: nil)
     }
 }
 

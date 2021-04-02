@@ -23,4 +23,10 @@ struct CoreDataManager {
         
         private init() {}
     }
+    
+    struct ListItemManager {
+        static let shared = CoreDataManager.ListItemManager()
+        
+        private init() {}
+    }
 }
