@@ -12,6 +12,7 @@ final class ListViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     private var lists = [List]()
+    var didTapCell: ((String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +56,9 @@ final class ListViewController: BaseViewController {
             self?.tabBarController?.tabBar.isHidden = false
         }
         alert.didTapAddNewList = { [weak self] name, icon in
-            CoreDataManager.ListManager.shared.addNewList(name: name, icon: icon)
+            if !CoreDataManager.ListManager.shared.addNewList(name: name, icon: icon) {
+                self?.alertError(message: "Try another name for your list")
+            }
             self?.dismiss(animated: true, completion: nil)
             self?.lists = CoreDataManager.ListManager.shared.fetchAllList()
             self?.tableView.reloadData()
@@ -105,5 +108,19 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let listname = lists[indexPath.row].name else {
+            return
+        }
+        guard let navigationController = navigationController else {
+            dismiss(animated: true) { [weak self] in
+                self?.didTapCell?(listname)
+            }
+            return
+        }
+        let vc = ListItemViewController(parentList: listname)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

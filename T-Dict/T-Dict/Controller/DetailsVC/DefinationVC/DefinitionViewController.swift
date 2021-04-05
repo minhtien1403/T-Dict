@@ -63,6 +63,10 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
             }
         }
     }
+    
+    func getPronounce() -> String {
+        return pronounceLabel.text ?? ""
+    }
     // MARK: - Config table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData[section].count
