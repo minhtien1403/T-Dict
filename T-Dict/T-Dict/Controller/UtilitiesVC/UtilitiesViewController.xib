@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UtilitiesViewController" customModule="T_Dict" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="oKv-qy-yC3" id="6Uz-G2-cAP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

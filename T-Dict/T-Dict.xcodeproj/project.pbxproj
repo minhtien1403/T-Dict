@@ -45,6 +45,15 @@
 		045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045E6AE32609BFC3009CA1B9 /* DetailsViewController.xib */; };
 		045E6AE82609D481009CA1B9 /* DefineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E6AE62609D481009CA1B9 /* DefineTableViewCell.swift */; };
 		045E6AE92609D481009CA1B9 /* DefineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */; };
+		04678E53261AECAC0071BAB0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E52261AECAC0071BAB0 /* Utilities.swift */; };
+		04678E57261AED4E0071BAB0 /* UtilitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E55261AED4E0071BAB0 /* UtilitiesCell.xib */; };
+		04678E58261AED4E0071BAB0 /* UtilitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E56261AED4E0071BAB0 /* UtilitiesCell.swift */; };
+		04678E5C261AED800071BAB0 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E5A261AED800071BAB0 /* QuizViewController.swift */; };
+		04678E5D261AED800071BAB0 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E5B261AED800071BAB0 /* QuizViewController.xib */; };
+		04678E62261AEDE00071BAB0 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E60261AEDE00071BAB0 /* SpeechViewController.swift */; };
+		04678E63261AEDE00071BAB0 /* SpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E61261AEDE00071BAB0 /* SpeechViewController.xib */; };
+		04678E66261AEDEA0071BAB0 /* RemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E64261AEDEA0071BAB0 /* RemindViewController.swift */; };
+		04678E67261AEDEA0071BAB0 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E65261AEDEA0071BAB0 /* RemindViewController.xib */; };
 		04C735C92616B23400658C7A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735C82616B23400658C7A /* CoreDataService.swift */; };
 		04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */; };
 		04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */; };
@@ -115,6 +124,15 @@
 		045E6AE32609BFC3009CA1B9 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		045E6AE62609D481009CA1B9 /* DefineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineTableViewCell.swift; sourceTree = "<group>"; };
 		045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineTableViewCell.xib; sourceTree = "<group>"; };
+		04678E52261AECAC0071BAB0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		04678E55261AED4E0071BAB0 /* UtilitiesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UtilitiesCell.xib; sourceTree = "<group>"; };
+		04678E56261AED4E0071BAB0 /* UtilitiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesCell.swift; sourceTree = "<group>"; };
+		04678E5A261AED800071BAB0 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		04678E5B261AED800071BAB0 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		04678E60261AEDE00071BAB0 /* SpeechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		04678E61261AEDE00071BAB0 /* SpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeechViewController.xib; sourceTree = "<group>"; };
+		04678E64261AEDEA0071BAB0 /* RemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindViewController.swift; sourceTree = "<group>"; };
+		04678E65261AEDEA0071BAB0 /* RemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindViewController.xib; sourceTree = "<group>"; };
 		04C735C82616B23400658C7A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+ListItemManager.swift"; sourceTree = "<group>"; };
@@ -299,6 +317,9 @@
 		043B61DC260087BF00EA2189 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04678E5F261AEDB10071BAB0 /* SpeechVC */,
+				04678E5E261AEDA00071BAB0 /* RemindVC */,
+				04678E59261AED6E0071BAB0 /* QuizVC */,
 				04DC6EBC26044E600039CB9B /* DetailsVC */,
 				043B61F72600EBBD00EA2189 /* Base */,
 				043B61E22600886800EA2189 /* UtilitiesVC */,
@@ -363,6 +384,7 @@
 		043B61E22600886800EA2189 /* UtilitiesVC */ = {
 			isa = PBXGroup;
 			children = (
+				04678E54261AED2A0071BAB0 /* UtilitiesCell */,
 				043B61EB260088AA00EA2189 /* UtilitiesViewController.swift */,
 				043B61EC260088AA00EA2189 /* UtilitiesViewController.xib */,
 			);
@@ -393,6 +415,42 @@
 				045E6AE72609D481009CA1B9 /* DefineTableViewCell.xib */,
 			);
 			path = DefineCell;
+			sourceTree = "<group>";
+		};
+		04678E54261AED2A0071BAB0 /* UtilitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				04678E56261AED4E0071BAB0 /* UtilitiesCell.swift */,
+				04678E55261AED4E0071BAB0 /* UtilitiesCell.xib */,
+			);
+			path = UtilitiesCell;
+			sourceTree = "<group>";
+		};
+		04678E59261AED6E0071BAB0 /* QuizVC */ = {
+			isa = PBXGroup;
+			children = (
+				04678E5A261AED800071BAB0 /* QuizViewController.swift */,
+				04678E5B261AED800071BAB0 /* QuizViewController.xib */,
+			);
+			path = QuizVC;
+			sourceTree = "<group>";
+		};
+		04678E5E261AEDA00071BAB0 /* RemindVC */ = {
+			isa = PBXGroup;
+			children = (
+				04678E64261AEDEA0071BAB0 /* RemindViewController.swift */,
+				04678E65261AEDEA0071BAB0 /* RemindViewController.xib */,
+			);
+			path = RemindVC;
+			sourceTree = "<group>";
+		};
+		04678E5F261AEDB10071BAB0 /* SpeechVC */ = {
+			isa = PBXGroup;
+			children = (
+				04678E60261AEDE00071BAB0 /* SpeechViewController.swift */,
+				04678E61261AEDE00071BAB0 /* SpeechViewController.xib */,
+			);
+			path = SpeechVC;
 			sourceTree = "<group>";
 		};
 		04C735CE2616D05000658C7A /* ListItemVC */ = {
@@ -503,6 +561,7 @@
 		04F6F8CD260440DE00210E0C /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				04678E52261AECAC0071BAB0 /* Utilities.swift */,
 				04F6F8CE260440DE00210E0C /* TabbarItem.swift */,
 				04F6F8CF260440DE00210E0C /* APIManger.swift */,
 				04F6F8D0260440DE00210E0C /* HTTPMethod.swift */,
@@ -579,12 +638,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DC6ECC2604536C0039CB9B /* InformationViewController.xib in Resources */,
+				04678E57261AED4E0071BAB0 /* UtilitiesCell.xib in Resources */,
 				043B61D22600871C00EA2189 /* LaunchScreen.storyboard in Resources */,
 				04C735D72616D1B300658C7A /* ListItemCell.xib in Resources */,
 				04DC6EC5260453020039CB9B /* DefinitionViewController.xib in Resources */,
 				043B61F426009C0000EA2189 /* BreeSerif-Regular.ttf in Resources */,
 				043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */,
 				042D3BA92611D43A0096BC6E /* SearchHistoryCell.xib in Resources */,
+				04678E63261AEDE00071BAB0 /* SpeechViewController.xib in Resources */,
+				04678E67261AEDEA0071BAB0 /* RemindViewController.xib in Resources */,
 				043B61EE260088AA00EA2189 /* UtilitiesViewController.xib in Resources */,
 				04F56F772601D8A400780915 /* Color.xcassets in Resources */,
 				04C735D22616D07B00658C7A /* ListItemViewController.xib in Resources */,
@@ -592,6 +654,7 @@
 				042D3BAD2611D50D0096BC6E /* SuggestCell.xib in Resources */,
 				045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */,
 				043B61EA2600889500EA2189 /* ListViewController.xib in Resources */,
+				04678E5D261AED800071BAB0 /* QuizViewController.xib in Resources */,
 				043B61E62600888600EA2189 /* SearchViewController.xib in Resources */,
 				042D3BBC2613092F0096BC6E /* ListCell.xib in Resources */,
 				0410C6862615641800A2FD7A /* IconCell.xib in Resources */,
@@ -607,11 +670,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				043B61ED260088AA00EA2189 /* UtilitiesViewController.swift in Sources */,
+				04678E5C261AED800071BAB0 /* QuizViewController.swift in Sources */,
 				043B61F92600EC2300EA2189 /* BaseNavigationController.swift in Sources */,
 				043B61E52600888600EA2189 /* SearchViewController.swift in Sources */,
 				04C735C92616B23400658C7A /* CoreDataService.swift in Sources */,
 				042D3BBB2613092F0096BC6E /* ListCell.swift in Sources */,
 				04DC6EBF26044F760039CB9B /* DetailsViewController.swift in Sources */,
+				04678E53261AECAC0071BAB0 /* Utilities.swift in Sources */,
 				04DC6EC4260453020039CB9B /* DefinitionViewController.swift in Sources */,
 				04EB6F42260C3A650040B94A /* DataType.swift in Sources */,
 				045E6AE22609BE21009CA1B9 /* BaseViewController.swift in Sources */,
@@ -639,8 +704,10 @@
 				04F6F8D4260440DE00210E0C /* HTTPMethod.swift in Sources */,
 				04D5DB4E2604413200D1FC33 /* APIKey.swift in Sources */,
 				0410C6D1261607BE00A2FD7A /* List+CoreDataClass.swift in Sources */,
+				04678E66261AEDEA0071BAB0 /* RemindViewController.swift in Sources */,
 				042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
+				04678E58261AED4E0071BAB0 /* UtilitiesCell.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
 				0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */,
@@ -652,6 +719,7 @@
 				04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */,
 				04C735D12616D07B00658C7A /* ListItemViewController.swift in Sources */,
 				045E6AE82609D481009CA1B9 /* DefineTableViewCell.swift in Sources */,
+				04678E62261AEDE00071BAB0 /* SpeechViewController.swift in Sources */,
 				04D5DB4C2604413200D1FC33 /* DefinitionsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
