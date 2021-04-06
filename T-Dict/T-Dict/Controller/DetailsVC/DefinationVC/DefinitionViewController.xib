@@ -37,6 +37,9 @@
                         <constraint firstAttribute="height" constant="30" id="vcB-7J-Kk8"/>
                     </constraints>
                     <state key="normal" image="speaker.3" catalog="system"/>
+                    <connections>
+                        <action selector="speakButtonTapped:" destination="-1" eventType="touchUpInside" id="LlH-hK-sfX"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ɪɡ'zæmpəl]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-ZP-I01">
                     <rect key="frame" x="5" y="128" width="404" height="18"/>

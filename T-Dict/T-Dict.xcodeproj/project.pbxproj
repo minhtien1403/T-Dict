@@ -54,6 +54,7 @@
 		04678E63261AEDE00071BAB0 /* SpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E61261AEDE00071BAB0 /* SpeechViewController.xib */; };
 		04678E66261AEDEA0071BAB0 /* RemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E64261AEDEA0071BAB0 /* RemindViewController.swift */; };
 		04678E67261AEDEA0071BAB0 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E65261AEDEA0071BAB0 /* RemindViewController.xib */; };
+		047E9F07261C075A00FD1205 /* SpeechServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E9F06261C075A00FD1205 /* SpeechServices.swift */; };
 		04C735C92616B23400658C7A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735C82616B23400658C7A /* CoreDataService.swift */; };
 		04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */; };
 		04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */; };
@@ -133,6 +134,7 @@
 		04678E61261AEDE00071BAB0 /* SpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeechViewController.xib; sourceTree = "<group>"; };
 		04678E64261AEDEA0071BAB0 /* RemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindViewController.swift; sourceTree = "<group>"; };
 		04678E65261AEDEA0071BAB0 /* RemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindViewController.xib; sourceTree = "<group>"; };
+		047E9F06261C075A00FD1205 /* SpeechServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechServices.swift; sourceTree = "<group>"; };
 		04C735C82616B23400658C7A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+ListItemManager.swift"; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 		04D5DB502604414000D1FC33 /* Utilis */ = {
 			isa = PBXGroup;
 			children = (
+				047E9F06261C075A00FD1205 /* SpeechServices.swift */,
 				04D5DB512604414000D1FC33 /* URLs.swift */,
 			);
 			path = Utilis;
@@ -673,6 +676,7 @@
 				04678E5C261AED800071BAB0 /* QuizViewController.swift in Sources */,
 				043B61F92600EC2300EA2189 /* BaseNavigationController.swift in Sources */,
 				043B61E52600888600EA2189 /* SearchViewController.swift in Sources */,
+				047E9F07261C075A00FD1205 /* SpeechServices.swift in Sources */,
 				04C735C92616B23400658C7A /* CoreDataService.swift in Sources */,
 				042D3BBB2613092F0096BC6E /* ListCell.swift in Sources */,
 				04DC6EBF26044F760039CB9B /* DetailsViewController.swift in Sources */,
