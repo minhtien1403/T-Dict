@@ -17,6 +17,7 @@ class InformationViewController: BaseViewController, UITableViewDelegate, UITabl
     private var tableData = [String]()
     private var screenType: ScreenType?
     private let rowHeight = 25
+    private let readingSpeed: Float = 0.5
     
     init(type: ScreenType) {
         super.init(nibName: nil, bundle: nil)
@@ -84,6 +85,14 @@ class InformationViewController: BaseViewController, UITableViewDelegate, UITabl
             self.tableView.reloadData()
         }
     }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        guard let word = wordLabel.text else {
+            return
+        }
+        SpeechServices.shared.startReading(text: word, speed: readingSpeed)
+    }
+    
     //MARK: - Config TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count

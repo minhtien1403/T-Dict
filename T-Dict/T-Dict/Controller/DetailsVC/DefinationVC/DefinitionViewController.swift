@@ -16,6 +16,7 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet private weak var tableView: UITableView!
     private let tableSection = ["Definition","Example"]
     private var tableData = [[String]]()
+    private let readingSpeed: Float = 0.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +68,14 @@ class DefinitionViewController: UIViewController, UITableViewDelegate, UITableVi
     func getPronounce() -> String {
         return pronounceLabel.text ?? ""
     }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        guard let word = wordLabel.text else {
+            return
+        }
+        SpeechServices.shared.startReading(text: word, speed: readingSpeed)
+    }
+    
     // MARK: - Config table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData[section].count
