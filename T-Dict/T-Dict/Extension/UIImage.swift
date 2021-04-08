@@ -18,6 +18,7 @@ enum ListIcon: String {
     case tree
     case food
     case car
+    case question
     
     var icon: UIImage {
         switch self {
@@ -29,6 +30,8 @@ enum ListIcon: String {
             return UIImage(named: "food") ?? UIImage()
         case .car:
             return UIImage(named: "car") ?? UIImage()
+        case .question:
+            return UIImage(named: "question") ?? UIImage()
         }
     }
 }

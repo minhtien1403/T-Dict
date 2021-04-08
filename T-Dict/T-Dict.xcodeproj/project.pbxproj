@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04036B6A261E8FB900270E27 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04036B68261E8FB900270E27 /* QuestionViewController.swift */; };
+		04036B6B261E8FB900270E27 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04036B69261E8FB900270E27 /* QuestionViewController.xib */; };
 		0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6772614B9AD00A2FD7A /* AlertView.swift */; };
 		0410C67A2614B9AD00A2FD7A /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410C6782614B9AD00A2FD7A /* AlertView.xib */; };
 		0410C6852615641800A2FD7A /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C6832615641800A2FD7A /* IconCell.swift */; };
@@ -56,6 +58,11 @@
 		04678E67261AEDEA0071BAB0 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E65261AEDEA0071BAB0 /* RemindViewController.xib */; };
 		047E9F07261C075A00FD1205 /* SpeechServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E9F06261C075A00FD1205 /* SpeechServices.swift */; };
 		047E9F09261C35AC00FD1205 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E9F08261C35AC00FD1205 /* NotificationServices.swift */; };
+		048B17E4261DFF6A00163D6B /* QuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B17E2261DFF6A00163D6B /* QuizTableCell.swift */; };
+		048B17E5261DFF6A00163D6B /* QuizTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B17E3261DFF6A00163D6B /* QuizTableCell.xib */; };
+		048B17E9261E04A800163D6B /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B17E7261E04A800163D6B /* PlayViewController.swift */; };
+		048B17EA261E04A800163D6B /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B17E8261E04A800163D6B /* PlayViewController.xib */; };
+		048B17EC261E0DB700163D6B /* RounedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B17EB261E0DB700163D6B /* RounedButton.swift */; };
 		04C735C92616B23400658C7A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735C82616B23400658C7A /* CoreDataService.swift */; };
 		04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */; };
 		04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */; };
@@ -88,6 +95,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04036B68261E8FB900270E27 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		04036B69261E8FB900270E27 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		0410C6772614B9AD00A2FD7A /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0410C6782614B9AD00A2FD7A /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		0410C6832615641800A2FD7A /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
@@ -137,6 +146,11 @@
 		04678E65261AEDEA0071BAB0 /* RemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindViewController.xib; sourceTree = "<group>"; };
 		047E9F06261C075A00FD1205 /* SpeechServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechServices.swift; sourceTree = "<group>"; };
 		047E9F08261C35AC00FD1205 /* NotificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
+		048B17E2261DFF6A00163D6B /* QuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableCell.swift; sourceTree = "<group>"; };
+		048B17E3261DFF6A00163D6B /* QuizTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizTableCell.xib; sourceTree = "<group>"; };
+		048B17E7261E04A800163D6B /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		048B17E8261E04A800163D6B /* PlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
+		048B17EB261E0DB700163D6B /* RounedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RounedButton.swift; sourceTree = "<group>"; };
 		04C735C82616B23400658C7A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+ListItemManager.swift"; sourceTree = "<group>"; };
@@ -433,6 +447,8 @@
 		04678E59261AED6E0071BAB0 /* QuizVC */ = {
 			isa = PBXGroup;
 			children = (
+				048B17E6261E048E00163D6B /* PlayVC */,
+				048B17DD261DFE7E00163D6B /* QuizCell */,
 				04678E5A261AED800071BAB0 /* QuizViewController.swift */,
 				04678E5B261AED800071BAB0 /* QuizViewController.xib */,
 			);
@@ -455,6 +471,26 @@
 				04678E61261AEDE00071BAB0 /* SpeechViewController.xib */,
 			);
 			path = SpeechVC;
+			sourceTree = "<group>";
+		};
+		048B17DD261DFE7E00163D6B /* QuizCell */ = {
+			isa = PBXGroup;
+			children = (
+				048B17E2261DFF6A00163D6B /* QuizTableCell.swift */,
+				048B17E3261DFF6A00163D6B /* QuizTableCell.xib */,
+			);
+			path = QuizCell;
+			sourceTree = "<group>";
+		};
+		048B17E6261E048E00163D6B /* PlayVC */ = {
+			isa = PBXGroup;
+			children = (
+				048B17E7261E04A800163D6B /* PlayViewController.swift */,
+				048B17E8261E04A800163D6B /* PlayViewController.xib */,
+				04036B68261E8FB900270E27 /* QuestionViewController.swift */,
+				04036B69261E8FB900270E27 /* QuestionViewController.xib */,
+			);
+			path = PlayVC;
 			sourceTree = "<group>";
 		};
 		04C735CE2616D05000658C7A /* ListItemVC */ = {
@@ -530,6 +566,7 @@
 				047E9F06261C075A00FD1205 /* SpeechServices.swift */,
 				04D5DB512604414000D1FC33 /* URLs.swift */,
 				047E9F08261C35AC00FD1205 /* NotificationServices.swift */,
+				048B17EB261E0DB700163D6B /* RounedButton.swift */,
 			);
 			path = Utilis;
 			sourceTree = "<group>";
@@ -657,14 +694,17 @@
 				04F56F772601D8A400780915 /* Color.xcassets in Resources */,
 				04C735D22616D07B00658C7A /* ListItemViewController.xib in Resources */,
 				045E6AE92609D481009CA1B9 /* DefineTableViewCell.xib in Resources */,
+				048B17E5261DFF6A00163D6B /* QuizTableCell.xib in Resources */,
 				042D3BAD2611D50D0096BC6E /* SuggestCell.xib in Resources */,
 				045E6AE42609BFC3009CA1B9 /* DetailsViewController.xib in Resources */,
 				043B61EA2600889500EA2189 /* ListViewController.xib in Resources */,
 				04678E5D261AED800071BAB0 /* QuizViewController.xib in Resources */,
 				043B61E62600888600EA2189 /* SearchViewController.xib in Resources */,
+				048B17EA261E04A800163D6B /* PlayViewController.xib in Resources */,
 				042D3BBC2613092F0096BC6E /* ListCell.xib in Resources */,
 				0410C6862615641800A2FD7A /* IconCell.xib in Resources */,
 				0410C67A2614B9AD00A2FD7A /* AlertView.xib in Resources */,
+				04036B6B261E8FB900270E27 /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,10 +737,12 @@
 				04D5DB482604413200D1FC33 /* SynonysmResponse.swift in Sources */,
 				042D3B9F2610DADB0096BC6E /* SuggestRespone.swift in Sources */,
 				04D5DB4B2604413200D1FC33 /* ExampleResponse.swift in Sources */,
+				048B17EC261E0DB700163D6B /* RounedButton.swift in Sources */,
 				045E6ADE2609865F009CA1B9 /* UIImage.swift in Sources */,
 				04F6F87E2602D94F00210E0C /* UIColor.swift in Sources */,
 				043B61F62600C3D000EA2189 /* UIFont.swift in Sources */,
 				04F6F8D2260440DE00210E0C /* TabbarItem.swift in Sources */,
+				048B17E9261E04A800163D6B /* PlayViewController.swift in Sources */,
 				042D3BAA2611D43A0096BC6E /* SearchHistoryCell.swift in Sources */,
 				0410C6D72616081900A2FD7A /* CoreDataManager.swift in Sources */,
 				04C735D62616D1B300658C7A /* ListItemCell.swift in Sources */,
@@ -711,6 +753,7 @@
 				04F6F8D4260440DE00210E0C /* HTTPMethod.swift in Sources */,
 				04D5DB4E2604413200D1FC33 /* APIKey.swift in Sources */,
 				0410C6D1261607BE00A2FD7A /* List+CoreDataClass.swift in Sources */,
+				04036B6A261E8FB900270E27 /* QuestionViewController.swift in Sources */,
 				04678E66261AEDEA0071BAB0 /* RemindViewController.swift in Sources */,
 				042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
@@ -729,6 +772,7 @@
 				045E6AE82609D481009CA1B9 /* DefineTableViewCell.swift in Sources */,
 				04678E62261AEDE00071BAB0 /* SpeechViewController.swift in Sources */,
 				04D5DB4C2604413200D1FC33 /* DefinitionsResponse.swift in Sources */,
+				048B17E4261DFF6A00163D6B /* QuizTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
