@@ -17,4 +17,22 @@ struct AppSetting {
             UserDefaults.standard.set(newValue, forKey: "search")
         }
     }
+    
+    static var switchCurrentState: Bool {
+        get {
+            UserDefaults.standard.bool(forKey: "switch")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "switch")
+        }
+    }
+    
+    static var stepperCurrentValue: Int {
+        get {
+            UserDefaults.standard.integer(forKey: "stepper")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "stepper")
+        }
+    }
 }

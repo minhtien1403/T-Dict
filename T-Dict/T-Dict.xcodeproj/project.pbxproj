@@ -55,6 +55,7 @@
 		04678E66261AEDEA0071BAB0 /* RemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04678E64261AEDEA0071BAB0 /* RemindViewController.swift */; };
 		04678E67261AEDEA0071BAB0 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04678E65261AEDEA0071BAB0 /* RemindViewController.xib */; };
 		047E9F07261C075A00FD1205 /* SpeechServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E9F06261C075A00FD1205 /* SpeechServices.swift */; };
+		047E9F09261C35AC00FD1205 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E9F08261C35AC00FD1205 /* NotificationServices.swift */; };
 		04C735C92616B23400658C7A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735C82616B23400658C7A /* CoreDataService.swift */; };
 		04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */; };
 		04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */; };
@@ -135,6 +136,7 @@
 		04678E64261AEDEA0071BAB0 /* RemindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindViewController.swift; sourceTree = "<group>"; };
 		04678E65261AEDEA0071BAB0 /* RemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindViewController.xib; sourceTree = "<group>"; };
 		047E9F06261C075A00FD1205 /* SpeechServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechServices.swift; sourceTree = "<group>"; };
+		047E9F08261C35AC00FD1205 /* NotificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
 		04C735C82616B23400658C7A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		04C735CC2616CEF300658C7A /* CoreDataManager+ListItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+ListItemManager.swift"; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 			children = (
 				047E9F06261C075A00FD1205 /* SpeechServices.swift */,
 				04D5DB512604414000D1FC33 /* URLs.swift */,
+				047E9F08261C35AC00FD1205 /* NotificationServices.swift */,
 			);
 			path = Utilis;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 				04678E58261AED4E0071BAB0 /* UtilitiesCell.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
+				047E9F09261C35AC00FD1205 /* NotificationServices.swift in Sources */,
 				0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,
 				0410C6D92616087C00A2FD7A /* CoreDataManager.ListManager.swift in Sources */,
