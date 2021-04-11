@@ -30,6 +30,7 @@ final class QuizViewController: UIViewController {
             $0.register(cellType: QuizTableCell.self)
         }
     }
+    
 }
 
 extension QuizViewController: UITableViewDelegate, UITableViewDataSource {
@@ -48,9 +49,17 @@ extension QuizViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PlayViewController()
-        vc.navigationItem.setHidesBackButton(true, animated: true)
-        navigationController?.pushViewController(vc, animated: true)
+        QuizAPI.shared.getQuiz(forLevel: indexPath.row + 1) { [weak self] QuizList in
+            DispatchQueue.main.async {
+                guard let quizlist = QuizList else {
+                    self?.alertError(message: "Check Your Internet Connection")
+                    return
+                }
+                let vc = PlayViewController(quizList: quizlist)
+                vc.navigationItem.setHidesBackButton(true, animated: true)
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     
 }
