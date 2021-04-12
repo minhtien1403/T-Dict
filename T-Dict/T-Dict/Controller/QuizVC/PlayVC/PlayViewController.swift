@@ -18,6 +18,19 @@ final class PlayViewController: UIViewController {
     private var totalQuestion = 10
     private var questionViewControllers = [UIViewController]()
     private let questionViewHeight: CGFloat = 500
+    private var questions = [[String]]()
+    private var options = [[String]]()
+    private var answers = [Int]()
+    private var quizList = [Quiz]()
+    
+    init(quizList: [Quiz]) {
+        super.init(nibName: nil, bundle: nil)
+        self.quizList = quizList
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +47,16 @@ final class PlayViewController: UIViewController {
         }
     }
     
+    func convertQuizData() {
+        questions = quizList.map { $0.quiz ?? [] }
+        options = quizList.map{ $0.option ?? [] }
+        answers = quizList.map{ $0.correct ?? 0 }
+    }
+    
     func setupQuestionViews() {
-        questionViewControllers = (0..<10).map({ (index) -> QuestionViewController in
-            let vc = QuestionViewController()
+        convertQuizData()
+        questionViewControllers = (0..<quizList.count).map({ (index) -> QuestionViewController in
+            let vc = QuestionViewController(question: questions[index], answer: options[index])
             vc.view.tag = index
             return vc
         })

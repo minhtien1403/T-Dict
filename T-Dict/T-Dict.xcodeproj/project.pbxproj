@@ -29,6 +29,9 @@
 		042D3BB72612FDA80096BC6E /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BB62612FDA80096BC6E /* AppSetting.swift */; };
 		042D3BBB2613092F0096BC6E /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D3BB92613092F0096BC6E /* ListCell.swift */; };
 		042D3BBC2613092F0096BC6E /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042D3BBA2613092F0096BC6E /* ListCell.xib */; };
+		043796582622FFBD001FCB35 /* QuizResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043796572622FFBD001FCB35 /* QuizResponse.swift */; };
+		0437965A2622FFDF001FCB35 /* QuizAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043796592622FFDF001FCB35 /* QuizAPI.swift */; };
+		0437965C26235F99001FCB35 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437965B26235F99001FCB35 /* Array+.swift */; };
 		043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C52600871B00EA2189 /* AppDelegate.swift */; };
 		043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B61C72600871B00EA2189 /* SceneDelegate.swift */; };
 		043B61CF2600871C00EA2189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043B61CE2600871C00EA2189 /* Assets.xcassets */; };
@@ -115,6 +118,9 @@
 		042D3BB62612FDA80096BC6E /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		042D3BB92613092F0096BC6E /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		042D3BBA2613092F0096BC6E /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		043796572622FFBD001FCB35 /* QuizResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizResponse.swift; path = "T-Dict/QuizResponse.swift"; sourceTree = SOURCE_ROOT; };
+		043796592622FFDF001FCB35 /* QuizAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizAPI.swift; path = "T-Dict/QuizAPI.swift"; sourceTree = SOURCE_ROOT; };
+		0437965B26235F99001FCB35 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		043B61C22600871B00EA2189 /* T-Dict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Dict.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043B61C52600871B00EA2189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043B61C72600871B00EA2189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -356,6 +362,7 @@
 				045E6ADD2609865F009CA1B9 /* UIImage.swift */,
 				042D3BA02611CC9A0096BC6E /* String+.swift */,
 				04C735CA2616B7CC00658C7A /* ViewController+Alert.swift */,
+				0437965B26235F99001FCB35 /* Array+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -556,6 +563,8 @@
 		04D5DB472604413200D1FC33 /* QuizAPI */ = {
 			isa = PBXGroup;
 			children = (
+				043796572622FFBD001FCB35 /* QuizResponse.swift */,
+				043796592622FFDF001FCB35 /* QuizAPI.swift */,
 			);
 			path = QuizAPI;
 			sourceTree = "<group>";
@@ -758,14 +767,17 @@
 				042D3BAE2611D50D0096BC6E /* SuggestCell.swift in Sources */,
 				043B61C62600871B00EA2189 /* AppDelegate.swift in Sources */,
 				04678E58261AED4E0071BAB0 /* UtilitiesCell.swift in Sources */,
+				0437965A2622FFDF001FCB35 /* QuizAPI.swift in Sources */,
 				043B61E92600889500EA2189 /* ListViewController.swift in Sources */,
 				04D5DB4D2604413200D1FC33 /* AntonymsResponse.swift in Sources */,
 				047E9F09261C35AC00FD1205 /* NotificationServices.swift in Sources */,
+				043796582622FFBD001FCB35 /* QuizResponse.swift in Sources */,
 				0410C6792614B9AD00A2FD7A /* AlertView.swift in Sources */,
 				043B61C82600871B00EA2189 /* SceneDelegate.swift in Sources */,
 				0410C6D92616087C00A2FD7A /* CoreDataManager.ListManager.swift in Sources */,
 				04C735CB2616B7CC00658C7A /* ViewController+Alert.swift in Sources */,
 				0410C6852615641800A2FD7A /* IconCell.swift in Sources */,
+				0437965C26235F99001FCB35 /* Array+.swift in Sources */,
 				04DC6ECB2604536C0039CB9B /* InfomartionViewController.swift in Sources */,
 				04C735CD2616CEF300658C7A /* CoreDataManager+ListItemManager.swift in Sources */,
 				04C735D12616D07B00658C7A /* ListItemViewController.swift in Sources */,

@@ -11,4 +11,5 @@ import Foundation
 struct URLs {
     private static var APIBaseUrl = "https://wordsapiv1.p.rapidapi.com"
     public static let APIGetUrl = APIBaseUrl + "/words"
+    static var QuizBaseURL = "https://twinword-word-association-quiz.p.rapidapi.com/type1/?level=%d&area=toeic"
 }
