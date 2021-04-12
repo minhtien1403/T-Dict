@@ -49,13 +49,15 @@ extension QuizViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.allowsSelection = false
         QuizAPI.shared.getQuiz(forLevel: indexPath.row + 1) { [weak self] QuizList in
             DispatchQueue.main.async {
+                tableView.allowsSelection = true
                 guard let quizlist = QuizList else {
                     self?.alertError(message: "Check Your Internet Connection")
                     return
                 }
-                let vc = PlayViewController(quizList: quizlist)
+                let vc = PlayViewController(quizList: quizlist, level: indexPath.row + 1)
                 vc.navigationItem.setHidesBackButton(true, animated: true)
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
