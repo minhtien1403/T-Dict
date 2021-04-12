@@ -15,17 +15,18 @@ final class PlayViewController: UIViewController {
     @IBOutlet private weak var stackView: UIStackView!
     private var pageController: UIPageViewController!
     private var currentQuestion = 0
-    private var totalQuestion = 10
     private var questionViewControllers = [UIViewController]()
     private let questionViewHeight: CGFloat = 500
     private var questions = [[String]]()
     private var options = [[String]]()
-    private var answers = [Int]()
+    private var trueAnswers = [Int]()
     private var quizList = [Quiz]()
+    private var level = 0
     
-    init(quizList: [Quiz]) {
+    init(quizList: [Quiz], level: Int) {
         super.init(nibName: nil, bundle: nil)
         self.quizList = quizList
+        self.level = level
     }
     
     required init?(coder: NSCoder) {
@@ -50,7 +51,7 @@ final class PlayViewController: UIViewController {
     func convertQuizData() {
         questions = quizList.map { $0.quiz ?? [] }
         options = quizList.map{ $0.option ?? [] }
-        answers = quizList.map{ $0.correct ?? 0 }
+        trueAnswers = quizList.map{ $0.correct ?? 0 }
     }
     
     func setupQuestionViews() {
@@ -111,9 +112,20 @@ final class PlayViewController: UIViewController {
     }
     
     @IBAction func didTapSubmitButton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        var score = 0
+        for index in 0..<quizList.count {
+            guard let vc = questionViewControllers[index] as? QuestionViewController else {
+                return
+            }
+            if trueAnswers[index] == vc.userAnswer {
+                score = score + 1
+            }
+        }
+        if score > AppSetting.getBestScoreForLevel(level: level) {
+            AppSetting.saveBestScoreForLevel(level: level, bestScore: score)
+        }
+        resultAlert(score: score, level: level)
     }
-    
 }
 
 extension PlayViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {

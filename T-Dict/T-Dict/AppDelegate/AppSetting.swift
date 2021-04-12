@@ -35,4 +35,12 @@ struct AppSetting {
             UserDefaults.standard.set(newValue, forKey: "stepper")
         }
     }
+    
+    static func getBestScoreForLevel(level: Int) -> Int {
+        return UserDefaults.standard.integer(forKey: "level\(level)")
+    }
+    
+    static func saveBestScoreForLevel(level: Int, bestScore: Int) {
+        UserDefaults.standard.set(bestScore, forKey: "level\(level)")
+    }
 }

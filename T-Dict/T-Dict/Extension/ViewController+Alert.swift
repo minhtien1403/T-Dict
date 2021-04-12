@@ -18,4 +18,15 @@ extension UIViewController {
                                       handler: nil))
         present(alert, animated: true, completion: nil)
     }
+    
+    func resultAlert(score: Int, level: Int) {
+        let resultAlert = UIAlertController(title: "Result",
+                                            message: "Your score: \(score) \nBest Score: \(AppSetting.getBestScoreForLevel(level: level))",
+                                            preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: "Done", style: .default) { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }
+        resultAlert.addAction(doneAction)
+        present(resultAlert, animated: true)
+    }
 }

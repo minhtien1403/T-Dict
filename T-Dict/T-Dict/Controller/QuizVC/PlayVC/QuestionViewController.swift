@@ -16,6 +16,7 @@ final class QuestionViewController: UIViewController {
     @IBOutlet private weak var secondAnswerButton: RounedButton!
     private var question = [String]()
     private var answer = [String]()
+    public var userAnswer = 0
     
     init(question: [String], answer: [String]) {
         super.init(nibName: nil, bundle: nil)
@@ -46,9 +47,11 @@ final class QuestionViewController: UIViewController {
         }
         firstAnswerButton.do {
             $0.setTitle(answer.first, for: .normal )
+            $0.tag = 1
         }
         secondAnswerButton.do {
             $0.setTitle(answer[1, default: "..."], for: .normal )
+            $0.tag = 2
         }
     }
     
@@ -56,6 +59,7 @@ final class QuestionViewController: UIViewController {
         if firstAnswerButton.isSelected {
             return
         }
+        userAnswer = sender.tag
         firstAnswerButton.isSelected = !sender.isSelected
         secondAnswerButton.isSelected = !firstAnswerButton.isSelected
     }
@@ -64,6 +68,7 @@ final class QuestionViewController: UIViewController {
         if secondAnswerButton.isSelected {
             return
         }
+        userAnswer = sender.tag
         secondAnswerButton.isSelected = !sender.isSelected
         firstAnswerButton.isSelected = !secondAnswerButton.isSelected
     }
