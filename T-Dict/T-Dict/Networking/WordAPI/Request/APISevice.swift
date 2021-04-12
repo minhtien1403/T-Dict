@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 struct APIService {
     
@@ -10,7 +11,7 @@ struct APIService {
     ]
     
     func request(word: String, type: APIManager, method: HTTPMethod, completion: @escaping (APIResult) -> Void) {
-        let urlString = "\(URLs.APIGetUrl)/\(word.safeString)/\(type.rawValue)"
+        let urlString = type == .random ? URLs.GetRandomWordURL : "\(URLs.APIGetUrl)/\(word.safeString)/\(type.rawValue)"
         guard let url = URL(string: urlString) else {
             completion(.failure(.failedToGetURL))
             return
@@ -82,5 +83,9 @@ struct APIService {
     
     func getSuggest(word: String, completion: @escaping (SuggestResponse?) -> Void) {
         fetchDataFromAPI(word: word, type: .also, completion: completion)
+    }
+    
+    func getRandomWord(completion: @escaping (RandomWordResponse?) -> Void) {
+        fetchDataFromAPI(word: "", type: .random, completion: completion)
     }
 }

@@ -16,16 +16,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So6-dk-GoR">
-                        <rect key="frame" x="20" y="12" width="295" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So6-dk-GoR">
+                        <rect key="frame" x="20" y="0.0" width="295" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="So6-dk-GoR" secondAttribute="bottom" id="3jw-Ob-Agj"/>
                     <constraint firstAttribute="trailing" secondItem="So6-dk-GoR" secondAttribute="trailing" constant="5" id="DFJ-pw-8VM"/>
                     <constraint firstItem="So6-dk-GoR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Fy3-9A-VsY"/>
+                    <constraint firstItem="So6-dk-GoR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cLP-V9-w9i"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

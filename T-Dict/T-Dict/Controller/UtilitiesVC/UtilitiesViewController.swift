@@ -61,8 +61,7 @@ extension UtilitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(utilities[indexPath.row].viewController,
-                                                 animated: true)
+        navigationController?.pushViewController(utilities[indexPath.row].viewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
