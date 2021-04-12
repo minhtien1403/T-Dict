@@ -35,7 +35,7 @@ enum Utilities: String {
         case .quiz:
             return QuizViewController()
         case .random:
-            return DetailsViewController(word: "")
+            return DetailsViewController(word: nil)
         case .remind:
             return RemindViewController()
         }

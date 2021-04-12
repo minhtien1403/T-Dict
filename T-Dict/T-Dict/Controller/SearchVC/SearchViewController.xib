@@ -25,11 +25,11 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-qZ-xU4">
-                    <rect key="frame" x="0.0" y="100" width="414" height="463.5"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="436.5"/>
                     <color key="backgroundColor" red="0.94995337719999995" green="0.9500743747" blue="0.9531216025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-wH-Em4">
-                    <rect key="frame" x="5" y="563.5" width="404" height="22"/>
+                    <rect key="frame" x="5" y="536.5" width="404" height="22"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title=" Clear Search History" image="trash" catalog="system">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,7 +41,7 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="cxW-qZ-xU4" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="1.7:3" id="0ud-y0-MR1"/>
+                <constraint firstItem="cxW-qZ-xU4" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="1.6:3" id="0ud-y0-MR1"/>
                 <constraint firstItem="Gs5-5y-Cvi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eh2-YQ-H3P"/>
                 <constraint firstItem="Gs5-5y-Cvi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Gb6-DU-DPG"/>
                 <constraint firstItem="Gs5-5y-Cvi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HTs-7G-QTZ"/>

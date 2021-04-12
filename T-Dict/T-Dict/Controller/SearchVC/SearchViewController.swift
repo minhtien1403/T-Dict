@@ -42,9 +42,9 @@ final class SearchViewController: BaseViewController, UINavigationControllerDele
     
     func pushToDetailsView(word: String) {
         let vc = DetailsViewController(word: word)
-        self.navigationController?.pushViewController(vc, animated: true)
-        self.cancelSearchBar()
-        self.tableView.reloadData()
+        navigationController?.pushViewController(vc, animated: true)
+        cancelSearchBar()
+        tableView.reloadData()
     }
     
     @IBAction func didTapClearSearchHistory(_ sender: Any) {
@@ -73,10 +73,14 @@ extension SearchViewController: UISearchBarDelegate, UITableViewDelegate, UITabl
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let word = searchBar.text else {
-            searchBar.endEditing(true)
+        guard let word = searchBar.text, !word.isEmpty else {
+            cancelSearchBar()
             return
         }
+        setUpSearchHistory(word: word)
+    }
+    
+    func setUpSearchHistory(word: String) {
         if AppSetting.searchHistory.contains(word) {
             guard let index = AppSetting.searchHistory.firstIndex(of: word) else {
                 return
@@ -154,9 +158,9 @@ extension SearchViewController: UISearchBarDelegate, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if searchBarIsEmpty {
-            pushToDetailsView(word: AppSetting.searchHistory[indexPath.row])
+            setUpSearchHistory(word: AppSetting.searchHistory[indexPath.row])
         } else {
-            pushToDetailsView(word: searchSuggestion[indexPath.row])
+            setUpSearchHistory(word: searchSuggestion[indexPath.row])
         }
     }
 }

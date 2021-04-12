@@ -16,4 +16,5 @@ enum APIManager: String {
     case antonyms
     case rhymes
     case also
+    case random
 }

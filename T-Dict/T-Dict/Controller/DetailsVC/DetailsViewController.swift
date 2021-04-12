@@ -18,8 +18,20 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
     private var examples = [String]()
     private var word: String?
     
-    init(word: String) {
+    init(word: String?) {
         super.init(nibName: nil, bundle: nil)
+        guard let word = word else {
+            APIService.shared.getRandomWord { [weak self] (response) in
+                guard let randomWord = response?.word else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    self?.word = randomWord
+                    self?.viewWillAppear(true)
+                }
+            }
+            return
+        }
         self.word = word
     }
     
@@ -31,6 +43,10 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
         super.viewDidLoad()
         configViews()
         configNavigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupChildViews()
         setupPageController()
     }
@@ -81,13 +97,14 @@ class DetailsViewController: BaseViewController, UINavigationControllerDelegate 
         pageController.delegate = self
         pageController.dataSource = self
         pageController.view.backgroundColor = .clear
-        guard let navBottom = navigationController?.navigationBar.bottom else {
+        guard let navBottom = navigationController?.navigationBar.bottom,
+            let tabBarHeight = tabBarController?.tabBar.height else {
             return
         }
         pageController.view.frame = CGRect(x: 0,
                                            y: navBottom + segmentControl.height,
                                            width: view.width,
-                                           height: view.height)
+                                           height: view.height - tabBarHeight - navBottom)
         pageController.setViewControllers([childViews[currentPageIndex]],
                                           direction: .forward,
                                           animated: true,

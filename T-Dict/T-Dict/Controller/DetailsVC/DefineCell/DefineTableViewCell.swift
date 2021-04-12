@@ -29,7 +29,7 @@ class DefineTableViewCell: UITableViewCell {
     func setContent(text: String) {
         label.text = "→ \(text)"
         label.textColor = .systemBlue
-        label.numberOfLines = 3
+        label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
     }
 }
