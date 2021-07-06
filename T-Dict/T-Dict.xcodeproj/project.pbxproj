@@ -83,6 +83,11 @@
 		04D5DB4E2604413200D1FC33 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB452604413200D1FC33 /* APIKey.swift */; };
 		04D5DB4F2604413200D1FC33 /* APISevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB462604413200D1FC33 /* APISevice.swift */; };
 		04D5DB522604414000D1FC33 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5DB512604414000D1FC33 /* URLs.swift */; };
+		04D6361C264981D6006EF4FA /* T_DictTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6361B264981D6006EF4FA /* T_DictTests.swift */; };
+		04D63624264982B6006EF4FA /* testDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D63623264982B6006EF4FA /* testDetailViewController.swift */; };
+		04D63626264982E3006EF4FA /* testDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D63625264982E3006EF4FA /* testDetailVC.swift */; };
+		04D636282649848C006EF4FA /* testSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D636272649848C006EF4FA /* testSearchVC.swift */; };
+		04D6362A26498BC9006EF4FA /* testAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6362926498BC9006EF4FA /* testAPIRequest.swift */; };
 		04DC6EBF26044F760039CB9B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6EBD26044F760039CB9B /* DetailsViewController.swift */; };
 		04DC6EC4260453020039CB9B /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6EC2260453020039CB9B /* DefinitionViewController.swift */; };
 		04DC6EC5260453020039CB9B /* DefinitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6EC3260453020039CB9B /* DefinitionViewController.xib */; };
@@ -97,6 +102,16 @@
 		04F6F8D4260440DE00210E0C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6F8D0260440DE00210E0C /* HTTPMethod.swift */; };
 		04F6F8D5260440DE00210E0C /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6F8D1260440DE00210E0C /* APIResult.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D6361E264981D6006EF4FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043B61BA2600871B00EA2189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043B61C12600871B00EA2189;
+			remoteInfo = "T-Dict";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04036B68261E8FB900270E27 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +190,13 @@
 		04D5DB452604413200D1FC33 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		04D5DB462604413200D1FC33 /* APISevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISevice.swift; sourceTree = "<group>"; };
 		04D5DB512604414000D1FC33 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		04D63619264981D6006EF4FA /* T-DictTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T-DictTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D6361B264981D6006EF4FA /* T_DictTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_DictTests.swift; sourceTree = "<group>"; };
+		04D6361D264981D6006EF4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D63623264982B6006EF4FA /* testDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDetailViewController.swift; sourceTree = "<group>"; };
+		04D63625264982E3006EF4FA /* testDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDetailVC.swift; sourceTree = "<group>"; };
+		04D636272649848C006EF4FA /* testSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSearchVC.swift; sourceTree = "<group>"; };
+		04D6362926498BC9006EF4FA /* testAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAPIRequest.swift; sourceTree = "<group>"; };
 		04DC6EBD26044F760039CB9B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		04DC6EC2260453020039CB9B /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		04DC6EC3260453020039CB9B /* DefinitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefinitionViewController.xib; sourceTree = "<group>"; };
@@ -197,6 +219,13 @@
 			files = (
 				042D3BB52612F5D40096BC6E /* Reusable in Frameworks */,
 				0410C68D2615A37D00A2FD7A /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D63616264981D6006EF4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				043B61C42600871B00EA2189 /* T-Dict */,
+				04D6361A264981D6006EF4FA /* T-DictTests */,
 				043B61C32600871B00EA2189 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -298,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				043B61C22600871B00EA2189 /* T-Dict.app */,
+				04D63619264981D6006EF4FA /* T-DictTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -583,6 +614,19 @@
 			path = Utilis;
 			sourceTree = "<group>";
 		};
+		04D6361A264981D6006EF4FA /* T-DictTests */ = {
+			isa = PBXGroup;
+			children = (
+				04D6362926498BC9006EF4FA /* testAPIRequest.swift */,
+				04D636272649848C006EF4FA /* testSearchVC.swift */,
+				04D63625264982E3006EF4FA /* testDetailVC.swift */,
+				04D63623264982B6006EF4FA /* testDetailViewController.swift */,
+				04D6361B264981D6006EF4FA /* T_DictTests.swift */,
+				04D6361D264981D6006EF4FA /* Info.plist */,
+			);
+			path = "T-DictTests";
+			sourceTree = "<group>";
+		};
 		04DC6EBC26044E600039CB9B /* DetailsVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +694,24 @@
 			productReference = 043B61C22600871B00EA2189 /* T-Dict.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04D63618264981D6006EF4FA /* T-DictTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D63622264981D6006EF4FA /* Build configuration list for PBXNativeTarget "T-DictTests" */;
+			buildPhases = (
+				04D63615264981D6006EF4FA /* Sources */,
+				04D63616264981D6006EF4FA /* Frameworks */,
+				04D63617264981D6006EF4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D6361F264981D6006EF4FA /* PBXTargetDependency */,
+			);
+			name = "T-DictTests";
+			productName = "T-DictTests";
+			productReference = 04D63619264981D6006EF4FA /* T-DictTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -662,6 +724,10 @@
 				TargetAttributes = {
 					043B61C12600871B00EA2189 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					04D63618264981D6006EF4FA = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 043B61C12600871B00EA2189;
 					};
 				};
 			};
@@ -683,6 +749,7 @@
 			projectRoot = "";
 			targets = (
 				043B61C12600871B00EA2189 /* T-Dict */,
+				04D63618264981D6006EF4FA /* T-DictTests */,
 			);
 		};
 /* End PBXProject section */
@@ -717,6 +784,13 @@
 				0410C6862615641800A2FD7A /* IconCell.xib in Resources */,
 				0410C67A2614B9AD00A2FD7A /* AlertView.xib in Resources */,
 				04036B6B261E8FB900270E27 /* QuestionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D63617264981D6006EF4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +866,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04D63615264981D6006EF4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D636282649848C006EF4FA /* testSearchVC.swift in Sources */,
+				04D63626264982E3006EF4FA /* testDetailVC.swift in Sources */,
+				04D6361C264981D6006EF4FA /* T_DictTests.swift in Sources */,
+				04D6362A26498BC9006EF4FA /* testAPIRequest.swift in Sources */,
+				04D63624264982B6006EF4FA /* testDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04D6361F264981D6006EF4FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043B61C12600871B00EA2189 /* T-Dict */;
+			targetProxy = 04D6361E264981D6006EF4FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		043B61D02600871C00EA2189 /* LaunchScreen.storyboard */ = {
@@ -956,6 +1050,46 @@
 			};
 			name = Release;
 		};
+		04D63620264981D6006EF4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HJZFUVFSV;
+				INFOPLIST_FILE = "T-DictTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tien.T-DictTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T-Dict.app/T-Dict";
+			};
+			name = Debug;
+		};
+		04D63621264981D6006EF4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HJZFUVFSV;
+				INFOPLIST_FILE = "T-DictTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tien.T-DictTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T-Dict.app/T-Dict";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -973,6 +1107,15 @@
 			buildConfigurations = (
 				043B61D72600871C00EA2189 /* Debug */,
 				043B61D82600871C00EA2189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D63622264981D6006EF4FA /* Build configuration list for PBXNativeTarget "T-DictTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D63620264981D6006EF4FA /* Debug */,
+				04D63621264981D6006EF4FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

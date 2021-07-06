@@ -170,6 +170,7 @@ extension DetailsViewController: UIPageViewControllerDelegate, UIPageViewControl
             return
         }
         segmentControl.selectedSegmentIndex = currentIndex
+        
     }
 }
 

@@ -20,14 +20,6 @@ final class RemindViewController: UIViewController {
         configView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        stepLabel.text = "\(AppSetting.stepperCurrentValue)"
-        stepper.value = Double(AppSetting.stepperCurrentValue)
-        notiSwitch.setOn(AppSetting.switchCurrentState, animated: true)
-    }
-    
-    
     func configView() {
         title = "Reminder"
         stepper.do {
@@ -40,6 +32,13 @@ final class RemindViewController: UIViewController {
             }
         }
         NotificationServices.shared.authorizeNotification()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        stepLabel.text = "\(AppSetting.stepperCurrentValue)"
+        stepper.value = Double(AppSetting.stepperCurrentValue)
+        notiSwitch.setOn(AppSetting.switchCurrentState, animated: true)
     }
     
     @IBAction func stepperDidChange(_ sender: UIStepper) {

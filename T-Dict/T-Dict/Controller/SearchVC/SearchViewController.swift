@@ -10,12 +10,12 @@ import UIKit
 
 final class SearchViewController: BaseViewController, UINavigationControllerDelegate {
     
-    @IBOutlet private weak var searchBar: UISearchBar!
-    @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var clearButton: UIButton!
-    private let rowHeight: CGFloat = 50
-    private var searchBarIsEmpty = true
-    private var searchSuggestion = [String]()
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var clearButton: UIButton!
+    let rowHeight: CGFloat = 50
+    var searchBarIsEmpty = true
+    var searchSuggestion = [String]()
     
     //MARK: - ConfigView
     override func viewDidLoad() {
